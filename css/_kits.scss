@@ -1,0 +1,65 @@
+/** TEXT COLORS **/
+
+
+.r-bold{
+  font-weight: bold;
+}
+.r-aqua{
+  color: $aqua;
+}
+
+/** BUTTONS **/
+.r-kit-btn{
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 15px;
+  background-color: $yellow;
+  color: $black;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size:$btnText;
+}
+
+@media screen and (max-width: 992px){
+  .r-kit-btn, .r-kit-btn-white, .r-kit-btn-pink {
+    font-size: 15px;
+  }
+}
+
+.r-kit-btn-white{
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 15px;
+  background-color: $white;
+  color: $black;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size:$btnText;
+
+  @media screen and (max-width: 992px){
+    font-size: 15px;
+  }
+}
+
+.r-kit-btn-pink{
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 5px 15px;
+  background-color: #f1a3b9;
+  color: $black;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-size:$btnText;
+
+  @media screen and (max-width: 992px){
+    font-size: 15px;
+  }
+}
+
+
+
+
+
+
+
+
