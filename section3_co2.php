@@ -7,7 +7,7 @@
                  classique, soit l’équivalent d’un aller-retour Paris New-York. Nous vous proposons deux offres 100% en ligne afin d’y parvenir le plus sereinement possible.</p>
         </div>
         <div>
-            <a href=""></a>
+            <a href="">En savoir plus</a>
         </div>
     </div>
    

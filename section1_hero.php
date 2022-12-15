@@ -10,6 +10,17 @@
             <h1>Organisez votre événement écoresponsable de A à Z</h1>
         </div>
 
+        <div class="home_search_form">
+            
+            <form class="r_form" action ="#" method="POST">
+
+                <div class="form_content">
+
+                </div>
+                
+            </form>
+
+        </div>
     </div>
 
 </section>

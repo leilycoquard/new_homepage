@@ -163,7 +163,7 @@ h5 {
   font-weight: 600;
 }
 
-p, a {
+p, a, li {
   font-size: 16px;
   font-weight: 400;
 }
@@ -242,7 +242,7 @@ button:hover {
 }
 
 html {
-  font-size: 10px;
+  font-size: 16px;
   line-height: 1.5;
 }
 
