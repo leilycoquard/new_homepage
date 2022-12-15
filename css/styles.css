@@ -1,3 +1,10 @@
+/* VARS */
+/*40px*/
+/*32px*/
+/*24px*/
+/*20px*/
+/* 16px, base */
+/* 16px, base */
 /* BACKGROUND COLOR */
 .bgc-black {
   background-color: #2E2D2C;
@@ -119,11 +126,46 @@
   color: black !important;
 }
 
+/* INIT */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif !important;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+p, a {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 a {
@@ -197,6 +239,15 @@ button:hover {
   .r-kit-btn-pink {
     font-size: 15px;
   }
+}
+
+html {
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+section.hero {
+  background-color: #EFD857;
 }
 
 /*# sourceMappingURL=styles.css.map */

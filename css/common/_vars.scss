@@ -1,3 +1,5 @@
+/* VARS */
+
 $black: #2E2D2C;
 $grey: #707070;
 $lightGrey:#EAEAE9;
@@ -5,7 +7,7 @@ $lightGrey2: #d8d8d8;
 $yellow: #EFD857;
 $blackYellow:#EFDD4A;
 $lightYellow: #F7ECAB;
-$lightYellow2: #fd00 f9ca;
+$lightYellow2: #fd00f9ca;
 $aqua: #1EA7AC;
 $lightBlue: #96DEE1;
 $green: #6CBE99;
@@ -23,26 +25,19 @@ $white: white;
 $poppins: 'Poppins',sans-serif;
 
 
-$bigText: 40px;
-$text: 16px;
-$tinyText: 14px;
-$veryTinyText: 14px;
-$subtitle: 18px;
-$title: 20px;
-$bigTitle: 30px;
-$btnText: 16px;
-$btnSearchText: 20px;
+$fs-h1: 2.5rem; /*40px*/
+$fs-h2: 2rem; /*32px*/
+$fs-h3: 1.5rem; /*24px*/
+$fs-h4: 1.25rem; /*20px*/
+$fs-h5: 18px;    /* 16px, base */
+$fs-base: 16px;    /* 16px, base */
 
-// $bigText: 40px; 
-// $text: 15px;
-// $tinyText: 13px;
-// $veryTinyText: 12px;
-// $subtitle: 18px;
-// $title: 20px;
-// $bigTitle: 30px;
-// $btnText: 16px;
-// $btnSearchText: 20px;
-
+$fw-h1: 700;
+$fw-h2: 500;
+$fw-h3: 500;
+$fw-h4: 500;
+$fw-h5: 600;
+$fw-base: 400;
 
 /* BACKGROUND COLOR */
 

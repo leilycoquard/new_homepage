@@ -1,22 +1,34 @@
+/* INIT */
+
 *{
   margin: 0;
   padding:0;
   box-sizing: border-box;
-  font-family: $poppins;
+  font-family: $poppins !important;
 }
 
-a{
+html {
+  font-size: 100%;
+}
+
+h1 { font-size: $fs-h1; font-weight: $fw-h1;}
+h2 { font-size: $fs-h2; font-weight: $fw-h2;}
+h3 { font-size: $fs-h3; font-weight: $fw-h3;}
+h4 { font-size: $fs-h4; font-weight: $fw-h4;}
+h5 { font-size: $fs-h5; font-weight: $fw-h5;}
+p,a{ font-size: $fs-base; font-weight: $fw-base;}
+
+
+a {
   text-decoration: none!important;
   &:hover{
     text-decoration: none!important;
   }
 }
 
-li{
+li {
   list-style-type: none;
 }
-button:hover{
+button:hover {
   cursor: pointer;
 }
-
-
