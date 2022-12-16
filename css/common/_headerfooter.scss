@@ -1,11 +1,45 @@
-section.header {
+header {
+    position: sticky;
+    top: 0;
     background-color: $white;
+    z-index:10;
+    box-shadow : 0px 3px 6px #00000029;
+
+    .vertical {
+        align-items: center;
+    }
+    
+    .account {
+        height: 100%;
+    }
 
     .account *{
         display: inline-block;
     }
+    
+    .header-container {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
 
-section.footer {
+footer {
     background-color: $yellow;
+
+    .logo {
+        img {
+            width: auto;
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    header {
+        .header-container {
+            margin-left: 96px;
+            margin-right: 96px;
+        }
+    }
 }

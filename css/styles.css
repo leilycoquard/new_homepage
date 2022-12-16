@@ -1,9 +1,12 @@
 /* VARS */
+/*32px*/
 /*40px*/
+/*24px*/
 /*32px*/
 /*24px*/
+/*24px*/
 /*20px*/
-/* 16px, base */
+/* 18px */
 /* 16px, base */
 /* BACKGROUND COLOR */
 .bgc-black {
@@ -126,17 +129,45 @@
   color: black !important;
 }
 
-section.header {
-  background-color: white;
+.margin-top-section {
+  margin-top: 50px;
 }
-section.header .account * {
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+header .vertical {
+  align-items: center;
+}
+header .account {
+  height: 100%;
+}
+header .account * {
   display: inline-block;
 }
-
-section.footer {
-  background-color: #EFD857;
+header .header-container {
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
+footer {
+  background-color: #EFD857;
+}
+footer .logo img {
+  width: auto;
+  height: 50px;
+}
+
+@media only screen and (min-width: 992px) {
+  header .header-container {
+    margin-left: 96px;
+    margin-right: 96px;
+  }
+}
 /* INIT */
 * {
   margin: 0;
@@ -150,17 +181,17 @@ html {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -170,17 +201,18 @@ h4 {
 }
 
 h5 {
-  font-size: 18px;
+  font-size: 1.125px;
   font-weight: 600;
 }
 
 p, a, li {
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 
 a {
   text-decoration: none !important;
+  color: inherit;
 }
 a:hover {
   text-decoration: none !important;
@@ -212,7 +244,7 @@ button:hover {
   color: #2E2D2C;
   border: 1px solid transparent;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 992px) {
@@ -228,7 +260,7 @@ button:hover {
   color: #2E2D2C;
   border: 1px solid transparent;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 @media screen and (max-width: 992px) {
   .r-kit-btn-white {
@@ -244,7 +276,7 @@ button:hover {
   color: #2E2D2C;
   border: 1px solid transparent;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 1rem;
 }
 @media screen and (max-width: 992px) {
   .r-kit-btn-pink {
@@ -253,8 +285,9 @@ button:hover {
 }
 
 html {
-  font-size: 12px;
+  font-size: 100%;
   line-height: 1.5;
+  position: relative;
 }
 
 .container {
@@ -269,18 +302,82 @@ html {
 
 section.hero {
   background-color: #EFD857;
+  padding-top: 70px;
+  padding-bottom: 35px;
 }
-section.hero .form_content {
+section.hero .text_intro p {
+  display: none;
+}
+section.hero .home_search_form {
+  margin-top: 42px;
+}
+section.hero .home_search_form .form_content {
+  padding: 5px;
   background-color: white;
-  border-radius: 1.25rem 1.25rem 0.625rem 0.625rem;
+  border-radius: 20px 20px 8px 8px;
+}
+section.hero .home_search_form .form_content button {
+  box-sizing: border-box;
+  width: 100%;
 }
 section.hero .logos {
+  margin-top: 35px;
   display: flex;
   justify-content: space-between;
 }
 section.hero .logos img {
-  width: 4.375rem;
-  height: 4.375rem;
+  width: 50px;
+  height: 50px;
+}
+
+section.parisNY .text {
+  text-align: center;
+}
+section.parisNY .text h2 {
+  margin-bottom: 35px;
+}
+section.parisNY a {
+  margin-top: 40px;
+}
+
+section.offres .accordion__item {
+  margin-bottom: 40px;
+}
+section.offres .accordion__title {
+  padding: 15px 15px 15px 40px;
+  display: block;
+  position: relative;
+  font-weight: 400;
+}
+section.offres .accordion__title h3 {
+  border-bottom: 1px solid #fefffa;
+  display: inline-block;
+}
+section.offres .accordion__title:hover, section.offres .accordion__title:focus {
+  cursor: pointer;
+  outline: none;
+}
+section.offres .accordion__title:hover h5, section.offres .accordion__title:focus h5 {
+  border-bottom-color: #a8bdc4;
+  display: inline-block;
+}
+.is-expanded section.offres .accordion__title:before {
+  content: "\f056";
+}
+section.offres .accordion__content-inner {
+  padding: 0 40px 10px 40px;
+}
+section.offres .accordion__content {
+  transition: height 0.3s ease-out;
+  height: 0;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

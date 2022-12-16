@@ -1,5 +1,5 @@
-<section class="header">
-    <div class="space-between container">
+<header>
+    <div class="vertical space-between header-container">
         <div>
             <akar-icon name="three-line-horizontal" id="icon" stroke="1.5" color="$black" size="50"> </akar-icon>
         </div>
@@ -12,10 +12,8 @@
 
         </div>
         <div class="account">
-            <a href="">
-                <akar-icon name="person" id="icon" stroke="1.5" color="#$black" size="30"> </akar-icon>
-                <akar-icon name="chevron-down" id="icon" stroke="3" color="#$black" size="20"> </akar-icon>
-            </a>
+            <akar-icon name="person" id="icon" stroke="1.5" color="#$black" size="30"> </akar-icon>
+            <akar-icon name="chevron-down" id="icon" stroke="3" color="#$black" size="20"> </akar-icon>
         </div>
     </div>
-</section>
+</header>

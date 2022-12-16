@@ -12,12 +12,13 @@
 
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0">
         <meta name="description" content="Tcheen est une plate-forme permettant de composer soi-même son évènement écoresponsable: lieu de réception, traiteur, foodtruck, animations,… Découvrez nos prestataires soucieux de l’environnement">
         <title>Plateforme d’organisation d’événements écoresponsables - Tcheen</title>
 
         <link rel="stylesheet" href="css/styles.css">
         <script src="https://unpkg.com/akar-icons-web-components" type="module"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
     </head>
     <body>

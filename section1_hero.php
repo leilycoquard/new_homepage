@@ -11,7 +11,7 @@
             <p>Des prestataires engagés et accompagnés, des prix transparents, sans surcoût et sans blabla.</p>
         </div>
 
-        <div class="home_search_form">
+        <div class="home_search_form margin-top-42">
             
             <form class="home_form" action ="#" method="POST">
 
