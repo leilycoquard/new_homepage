@@ -1,8 +1,33 @@
 html {
-    font-size:16px;
+    font-size:12px;
     line-height: 1.5;
+}
+
+.container {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
 }
 
 section.hero {
     background-color: $yellow;
+
+    .form_content {
+        background-color: $white;
+        border-radius: 1.25rem 1.25rem 0.625rem 0.625rem;
+    }
+
+    .logos {
+        display: flex;
+        justify-content: space-between;
+
+        img {
+            width: 4.375rem;
+            height: 4.375rem;
+        }
+    }
 }

@@ -1,0 +1,11 @@
+section.header {
+    background-color: $white;
+
+    .account *{
+        display: inline-block;
+    }
+}
+
+section.footer {
+    background-color: $yellow;
+}
