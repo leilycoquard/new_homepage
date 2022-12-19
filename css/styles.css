@@ -1,5 +1,5 @@
 /* VARS */
-/*32px*/
+/*30px*/
 /*40px*/
 /*24px*/
 /*32px*/
@@ -181,7 +181,7 @@ html {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.875rem;
   font-weight: 700;
 }
 
@@ -302,6 +302,8 @@ html {
 
 section.hero {
   background-color: #EFD857;
+  background-image: url("../svg/bg.svg");
+  background-size: cover;
   padding-top: 70px;
   padding-bottom: 35px;
 }
@@ -312,12 +314,52 @@ section.hero .home_search_form {
   margin-top: 42px;
 }
 section.hero .home_search_form .form_content {
-  padding: 5px;
+  padding: 10px;
   background-color: white;
   border-radius: 20px 20px 8px 8px;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+}
+section.hero .home_search_form .form_content > div > * {
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 section.hero .home_search_form .form_content button {
   box-sizing: border-box;
+  width: 100%;
+}
+section.hero .home_search_form .form_content .line:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+section.hero .home_search_form .form_content .line > div {
+  float: left;
+}
+section.hero .home_search_form .form_content .line > div:first-child {
+  width: 60%;
+}
+section.hero .home_search_form .form_content .line > div:last-child {
+  width: 40%;
+  margin: 0;
+}
+section.hero input {
+  padding: 10pxpx;
+  display: block;
+  width: 100%;
+  border: none;
+}
+section.hero input:focus {
+  outline: none;
+}
+section.hero select {
+  cursor: pointer;
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
   width: 100%;
 }
 section.hero .logos {
@@ -340,17 +382,19 @@ section.parisNY a {
   margin-top: 40px;
 }
 
-section.offres .accordion__item {
+padding section.offres .accordion__item {
   margin-bottom: 40px;
 }
 section.offres .accordion__title {
-  padding: 15px 15px 15px 40px;
-  display: block;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   font-weight: 400;
 }
 section.offres .accordion__title h3 {
-  border-bottom: 1px solid #fefffa;
+  margin-left: 20px;
   display: inline-block;
 }
 section.offres .accordion__title:hover, section.offres .accordion__title:focus {

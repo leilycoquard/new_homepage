@@ -1,4 +1,4 @@
-<section class="pepitesFestives" aria-labelledby="Des prestataires de qualité">
+<section class="pepitesFestives margin-top-section" aria-labelledby="Des prestataires de qualité">
 
    <div>
         <h2>En manque d’inspiration ?</h2>

@@ -1,4 +1,4 @@
-<section class="offres " aria-labelledby="Deux offres Tcheen">
+<section class="offres margin-top-section" aria-labelledby="Deux offres Tcheen">
 
     <div class="container">
 
@@ -56,11 +56,11 @@
 
         </div>
 
+        <div>
+            <a href="" class="r-kit-btn">Confiez-nous votre recherche</a>
+        </div>
     </div>
 
-    <div>
-        <a href="" class="r-kit-btn">Confiez-nous votre recherche</a>
-    </div>
    
 </section>
 

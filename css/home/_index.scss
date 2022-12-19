@@ -16,6 +16,8 @@ html {
 
 section.hero {
     background-color: $yellow;
+    background-image: url('../svg/bg.svg');
+    background-size: cover;
     padding-top: 70px;
     padding-bottom: 35px;
 
@@ -27,16 +29,62 @@ section.hero {
         margin-top: 42px;
 
         .form_content {
-            padding: 5px;
+            padding: 10px;
             background-color: $white;
             border-radius: 20px 20px 8px 8px;
+            display: flex;
+            flex-flow: column nowrap;
+            row-gap: 5px ;
+
+            > div > * {
+              height: 50px;
+              display: flex;
+              align-items: center;
+            }
     
             button {
                 box-sizing: border-box;
                 width: 100%;
             }
+
+            .line {
+              &:after {
+                content: "";
+                display: table;
+                clear: both;
+              }
+
+              > div {
+                float:left;
+
+                &:first-child {
+                  width:60%;
+                }
+                &:last-child { 
+                  width:40%;
+                  margin:0;
+                }
+              }
+            }
         }
 
+    }
+
+    input 				{
+      padding:10pxpx;
+      display:block;
+      width:100%;
+      border:none;
+    }
+    input:focus 		{ outline:none; }
+
+    select {
+      cursor: pointer;
+      appearance: none;
+      outline: 0;
+      border: 0;
+      box-shadow: none;
+      width: 100%;
     }
 
 
@@ -68,19 +116,23 @@ section.parisNY {
 section.offres {
 
     .accordion { 
+
+      padding
     
         &__item {
           margin-bottom: 40px;
         }
       
         &__title {
-          padding: 15px 15px 15px 40px;
-          display: block;
+          padding: 0px 15px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
           position: relative;
           font-weight: 400;
     
           h3 {
-            border-bottom: 1px solid #fefffa;
+            margin-left: 20px;
             display:inline-block;
           }
       

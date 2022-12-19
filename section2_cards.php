@@ -1,6 +1,6 @@
 <section class="fourCards margin-top-section" aria-labelledby="4 raisons de faire confiance à Tcheen">
     
-    <div>
+    <div class="container">
         <div>
 
             <div>

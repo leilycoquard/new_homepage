@@ -1,10 +1,6 @@
 <section class="hero" aria-labelledby="Introduction et zone de recherche">
-
-    <div class="bg">
-
-    </div>
-
-    <div class="container content">
+    
+    <div class="container">
 
         <div class="text_intro">
             <h1>Organisez votre événement écoresponsable de A à Z</h1>
@@ -16,11 +12,13 @@
             <form class="home_form" action ="#" method="POST">
 
                 <div class="form_content">
-                    <div>
-                        <input id="city" type="text" name="city" placeholder="Où">
-                    </div>
-                    <div>
-                        <input id="date" type="date" name="date" value="">
+                    <div class="line">
+                        <div>
+                            <input id="city" type="text" name="city" placeholder="Où">
+                        </div>
+                        <div>
+                            <input id="date" type="date" name="date" value="">
+                        </div>
                     </div>
                     <div>
                         <select id="event" class="" name="event">
