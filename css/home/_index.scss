@@ -31,7 +31,7 @@ section.hero {
         .form_content {
             padding: 10px;
             background-color: $white;
-            border-radius: 20px 20px 8px 8px;
+            border-radius: 20px;
             display: flex;
             flex-flow: column nowrap;
             row-gap: 5px ;
@@ -100,6 +100,32 @@ section.hero {
     }
 }
 
+section.fourCards {
+
+  .card {
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 10px;
+
+    border-radius: 10px;
+    width: 280px;
+    height: 280px;
+    padding: 20px;
+
+    overflow: hidden;
+    cursor: pointer;
+    text-align: left;
+    background-color: $white;
+
+  }
+
+  .card.active {
+    background-color: $yellow;
+    transition: 0.4s;
+  }
+}
+
 section.parisNY {
     .text {
         text-align: center;
@@ -115,53 +141,86 @@ section.parisNY {
 
 section.offres {
 
-    .accordion { 
+  .accordion { 
+  
+    &__item {
+      margin-bottom: 40px;
+    }
+  
+    &__title {
+      padding: 0px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      font-weight: 400;
 
-      padding
-    
-        &__item {
-          margin-bottom: 40px;
-        }
-      
-        &__title {
-          padding: 0px 15px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          position: relative;
-          font-weight: 400;
-    
-          h3 {
-            margin-left: 20px;
-            display:inline-block;
-          }
-      
-          &:hover,
-          &:focus {
-            cursor: pointer;
-            outline: none;
-            h5 {
-              border-bottom-color: #a8bdc4;
-              display:inline-block;
-            }
-          }
-      
-          .is-expanded & {
-            &:before {
-              content: "\f056";
-            }
-      
-          }
-        }
-      
-          &__content-inner {
-              padding: 0 40px 10px 40px;
-          }
-      
-        &__content {
-          transition: height 0.3s ease-out;
-          height: 0;
-          overflow: hidden;
+      h3 {
+        margin-left: 20px;
+        display:inline-block;
+      }
+  
+      &:hover,
+      &:focus {
+        cursor: pointer;
+        outline: none;
+        h5 {
+          border-bottom-color: #a8bdc4;
+          display:inline-block;
         }
       }
+  
+      .is-expanded & {
+        &:before {
+          content: "\f056";
+        }
+  
+      }
+    }
+  
+      &__content-inner {
+          padding: 0 40px 10px 40px;
+      }
+  
+    &__content {
+      transition: height 0.3s ease-out;
+      height: 0;
+      overflow: hidden;
+    }
+  }
+
+  .devis {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+section.presse {
+  .liens {
+    margin-top: 35px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 35px;
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+  }
+}
+
+section.devenir {
+
+  .prestataire {
+    background-color: $yellow;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .both {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 40px;
+  }
 }

@@ -153,19 +153,53 @@ header .header-container {
   margin-left: 25px;
   margin-right: 25px;
 }
+header .hide {
+  display: block;
+}
+header .show {
+  display: none;
+}
 
 footer {
   background-color: #EFD857;
 }
-footer .logo img {
-  width: auto;
-  height: 50px;
+footer input {
+  padding: 10px;
+  display: block;
+  width: 100%;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+}
+footer input:focus {
+  outline: none;
+}
+footer .rs .logos {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 12px;
 }
 
 @media only screen and (min-width: 992px) {
   header .header-container {
     margin-left: 96px;
     margin-right: 96px;
+  }
+  header .left, header .right {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 30px;
+  }
+  header .hide {
+    display: none;
+  }
+  header .show {
+    display: inline-block;
+  }
+  footer .three {
+    display: grid;
+    width: 900px;
+    grid-template-columns: 300px 1fr 2fr;
   }
 }
 /* INIT */
@@ -201,7 +235,7 @@ h4 {
 }
 
 h5 {
-  font-size: 1.125px;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
@@ -316,7 +350,7 @@ section.hero .home_search_form {
 section.hero .home_search_form .form_content {
   padding: 10px;
   background-color: white;
-  border-radius: 20px 20px 8px 8px;
+  border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 5px;
@@ -372,6 +406,25 @@ section.hero .logos img {
   height: 50px;
 }
 
+section.fourCards .card {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 10px;
+  border-radius: 10px;
+  width: 280px;
+  height: 280px;
+  padding: 20px;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+  background-color: white;
+}
+section.fourCards .card.active {
+  background-color: #EFD857;
+  transition: 0.4s;
+}
+
 section.parisNY .text {
   text-align: center;
 }
@@ -382,7 +435,7 @@ section.parisNY a {
   margin-top: 40px;
 }
 
-padding section.offres .accordion__item {
+section.offres .accordion__item {
   margin-bottom: 40px;
 }
 section.offres .accordion__title {
@@ -416,11 +469,75 @@ section.offres .accordion__content {
   height: 0;
   overflow: hidden;
 }
+section.offres .devis {
+  margin-top: 50px;
+  text-align: center;
+}
+
+section.presse .liens {
+  margin-top: 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  column-gap: 35px;
+}
+section.presse .liens img {
+  width: 80px;
+  height: 80px;
+}
+
+section.devenir .prestataire {
+  background-color: #EFD857;
+  border-radius: 10px;
+  padding: 20px;
+}
+section.devenir .both {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 40px;
+}
 
 @media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
   .container {
     margin-left: 200px;
     margin-right: 200px;
+  }
+  section.hero .text_intro h1 {
+    width: 60%;
+  }
+  section.hero .text_intro p {
+    display: inline-block;
+    width: 50%;
+  }
+  section.hero .form_content {
+    display: grid;
+    flex-flow: row nowrap !important;
+    justify-content: space-between;
+    height: 100px;
+  }
+  section.devenir .prestataire {
+    background-color: #EFD857;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  section.devenir .both {
+    flex-flow: row nowrap;
+    column-gap: 40px;
   }
 }
 

@@ -53,12 +53,12 @@
         </div>
 
         <div class="logos">
-            <img src="webp\logos\pfabre.webp" alt="Pierre Fabre">
-            <img src="webp\logos\lpo.webp" alt="LPO Ligue pour la Protection des Oiseaux">
-            <img src="webp\logos\crouge.webp" alt="Croix-Rouge française">
-            <img src="webp\logos\lposte.webp" alt="La Poste Groupe">
-            <img src="webp\logos\airbus.webp" alt="Airbus">
-            <img src="webp\logos\grdf.webp" alt="GRDF Gaz Réseau Distribution France">
+            <img src="webp\clients\pfabre.webp" alt="Pierre Fabre">
+            <img src="webp\clients\lpo.webp" alt="LPO Ligue pour la Protection des Oiseaux">
+            <img src="webp\clients\crouge.webp" alt="Croix-Rouge française">
+            <img src="webp\clients\lposte.webp" alt="La Poste Groupe">
+            <img src="webp\clients\airbus.webp" alt="Airbus">
+            <img src="webp\clients\grdf.webp" alt="GRDF Gaz Réseau Distribution France">
         </div>
 
     </div>

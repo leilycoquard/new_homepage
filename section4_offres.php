@@ -56,7 +56,7 @@
 
         </div>
 
-        <div>
+        <div class="devis">
             <a href="" class="r-kit-btn">Confiez-nous votre recherche</a>
         </div>
     </div>

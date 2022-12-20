@@ -1,6 +1,47 @@
 @media only screen and (min-width: 992px) {
+     
+    h1 { font-size: $fs-h1-desk;}
+    h2 { font-size: $fs-h2-desk;}
+    h3 { font-size: $fs-h3-desk;}
+    h4 { font-size: $fs-h4;}
+    h5 { font-size: $fs-h5;}
+
     .container {
         margin-left: 200px;
         margin-right: 200px;
     }
+
+    section.hero {
+
+        .text_intro{
+            h1 {
+                width: 60%;
+            }
+            p {
+                display: inline-block;
+                width: 50%;
+            }
+        }
+        
+        .form_content {
+            display: grid;
+            flex-flow: row nowrap !important;
+            justify-content: space-between;
+            height: 100px;
+        }
+    }
+
+    section.devenir {
+
+        .prestataire {
+          background-color: $yellow;
+          border-radius: 10px;
+          padding: 20px;
+        }
+      
+        .both {
+          flex-flow: row nowrap;
+          column-gap: 40px;
+        }
+      }
 }
