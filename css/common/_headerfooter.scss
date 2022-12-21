@@ -8,13 +8,11 @@ header {
     .vertical {
         align-items: center;
     }
-    
-    .account {
-        height: 100%;
-    }
 
-    .account *{
-        display: inline-block;
+    .left, .right {
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 30px;
     }
     
     .header-container {
@@ -28,6 +26,11 @@ header {
 
     .show {
         display: none;
+    }
+
+    .account {
+        display: flex;
+        align-items: center;
     }
 }
 
@@ -56,24 +59,22 @@ footer {
 @media only screen and (min-width: 992px) {
 
     header {
+        height: 60px;
+
         .header-container {
             margin-left: 96px;
             margin-right: 96px;
-        }
-
-        .left, .right {
-            display: flex;
-            flex-flow: row nowrap;
-            column-gap: 30px;
-        }
-        
+        }        
 
         .hide {
             display: none;
         }
     
         .show {
-            display: inline-block;
+            display: flex;
+            flex-direction: row;
+            column-gap: 10px;
+            align-items: center;
         }
     }
 

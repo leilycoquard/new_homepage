@@ -2,7 +2,7 @@
 
     <div class="container">   
         
-        <div>
+        <div class="h2-text">
             <h2>La vérité sort de la bouche des clients...</h2>
         </div>
         

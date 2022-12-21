@@ -1,6 +1,6 @@
 <section class="fourCards margin-top-section" aria-labelledby="4 raisons de faire confiance à Tcheen">
     
-    <div class="container">
+    <div class="container cards">
         <div>
 
             <div class="card card__1 active">
@@ -15,11 +15,8 @@
 
         </div>
 
-        <div>
-            <img src="" class="img__1 img__active" alt="Solange & Ginette">
-            <img src="" class="img__2" alt="Solange & Ginette">
-            <img src="" class="img__3" alt="Samos Greek Food">
-            <img src="" class="img__4" alt="Domaine de la Chanterelle">
+        <div class="img">
+            <img src="webp\cards\s&g.webp" id="img__switch" alt="Solange & Ginette" loading="lazy">
         </div>
         
         <div>
@@ -37,14 +34,38 @@
         </div>
     </div>
 
+    <script>
+    
+        $(document).ready(function(){
+    
+            function handleMouseover(e) {
+
+                document.querySelector(".active").classList.remove("active");
+                var img = document.getElementById("img__switch");
+                e.target.closest(".card").classList.add("active");
+    
+                if (e.target.classList.contains("card__1")) {
+                    img.src="webp/cards/s&g.webp";
+                    img.alt = "Solange & Ginette";
+    
+                } else if (e.target.classList.contains("card__2")) {
+                    img.src="webp/cards/samos.webp";
+                    img.alt = "Samos Greek Food";
+    
+                } else if (e.target.classList.contains("card__3")){
+                    img.src="webp/cards/donvent.webp";
+                    img.alt = "Le Don du Vent";
+
+                } else if (e.target.classList.contains("card__4")) {
+                    img.src="webp/cards/fredeville.webp";
+                    img.alt = "Frédeville Organisation";
+                }
+    
+            }
+    
+            document.querySelectorAll(".card").forEach(card => card.addEventListener("mouseover", handleMouseover) );
+            document.querySelectorAll(".card").forEach(card => card.addEventListener("click", handleMouseover) );
+        });
+    
+    </script>
 </section>
-
-<script>
-    function handleMouseover(e) {
-        document.querySelector(".active").classList.remove("active");
-        e.target.closest(".card").classList.add("active");
-    }
-
-    document.querySelectorAll(".card").forEach(card => card.addEventListener("mouseover", handleMouseover) );
-    document.querySelectorAll(".card").forEach(card => card.addEventListener("click", handleMouseover) );
-</script>

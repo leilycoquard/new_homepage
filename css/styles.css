@@ -143,11 +143,10 @@ header {
 header .vertical {
   align-items: center;
 }
-header .account {
-  height: 100%;
-}
-header .account * {
-  display: inline-block;
+header .left, header .right {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 30px;
 }
 header .header-container {
   margin-left: 25px;
@@ -158,6 +157,10 @@ header .hide {
 }
 header .show {
   display: none;
+}
+header .account {
+  display: flex;
+  align-items: center;
 }
 
 footer {
@@ -181,20 +184,21 @@ footer .rs .logos {
 }
 
 @media only screen and (min-width: 992px) {
+  header {
+    height: 60px;
+  }
   header .header-container {
     margin-left: 96px;
     margin-right: 96px;
-  }
-  header .left, header .right {
-    display: flex;
-    flex-flow: row nowrap;
-    column-gap: 30px;
   }
   header .hide {
     display: none;
   }
   header .show {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
   }
   footer .three {
     display: grid;
@@ -324,6 +328,11 @@ html {
   position: relative;
 }
 
+.h2-text {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
 .container {
   margin-left: 25px;
   margin-right: 25px;
@@ -380,7 +389,7 @@ section.hero .home_search_form .form_content .line > div:last-child {
   margin: 0;
 }
 section.hero input {
-  padding: 10pxpx;
+  padding: 10px;
   display: block;
   width: 100%;
   border: none;
@@ -406,13 +415,18 @@ section.hero .logos img {
   height: 50px;
 }
 
+section.fourCards .cards {
+  display: grid;
+}
+section.fourCards img {
+  display: none;
+}
 section.fourCards .card {
   position: relative;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 10px;
   border-radius: 10px;
-  width: 280px;
   height: 280px;
   padding: 20px;
   overflow: hidden;
@@ -425,30 +439,28 @@ section.fourCards .card.active {
   transition: 0.4s;
 }
 
-section.parisNY .text {
-  text-align: center;
-}
-section.parisNY .text h2 {
-  margin-bottom: 35px;
-}
 section.parisNY a {
   margin-top: 40px;
 }
 
+section.offres .accordion {
+  display: flex;
+  flex-direction: column;
+}
 section.offres .accordion__item {
   margin-bottom: 40px;
+  flex: 1;
 }
 section.offres .accordion__title {
   padding: 0px 15px;
   display: flex;
-  justify-content: space-between;
+  column-gap: 20px;
   align-items: center;
   position: relative;
   font-weight: 400;
 }
-section.offres .accordion__title h3 {
-  margin-left: 20px;
-  display: inline-block;
+section.offres .accordion__title .text {
+  text-align: left;
 }
 section.offres .accordion__title:hover, section.offres .accordion__title:focus {
   cursor: pointer;
@@ -517,6 +529,9 @@ section.devenir .both {
     margin-left: 200px;
     margin-right: 200px;
   }
+  .h2-text {
+    width: 60%;
+  }
   section.hero .text_intro h1 {
     width: 60%;
   }
@@ -529,6 +544,28 @@ section.devenir .both {
     flex-flow: row nowrap !important;
     justify-content: space-between;
     height: 100px;
+  }
+  section.hero .form_content > div > * {
+    height: 100% !important;
+  }
+  section.hero img {
+    width: 100px !important;
+    height: 100px !important;
+  }
+  section.fourCards .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+  }
+  section.fourCards img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  section.offres .accordion {
+    flex-direction: row;
+    column-gap: 40px;
   }
   section.devenir .prestataire {
     background-color: #EFD857;

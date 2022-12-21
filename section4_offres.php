@@ -6,10 +6,13 @@
 
             <article class="accordion__item js-show-item-default" data-binding="expand-accordion-item">
                 <span class="accordion__title" aria-controls="panel-1" role="tab" aria-selected="false" aria-expanded="false" data-binding="expand-accordion-trigger">
-                    <svg width="52" height="52" viewBox="0 0 52 52" xmlns="http://www.w3.org/2000/svg" loading="lazy">
-                        <path d="M17.6571 1.46037C24.1459 -0.791579 31.2669 -0.408294 37.4729 2.52695C40.9486 4.197 44.0137 6.60364 46.4526 9.57752C48.8915 12.5514 50.6448 16.0203 51.5893 19.74C52.5338 23.4597 52.6465 27.3399 51.9194 31.1076C51.1923 34.8753 49.6431 38.4388 47.3808 41.5475C46.353 42.911 45.1974 44.1747 43.9296 45.3215C42.67 46.4455 41.3166 47.461 39.8839 48.3572C36.9323 50.076 33.6844 51.2335 30.3062 51.7702C28.6247 51.9751 26.9291 52.0409 25.2367 51.9672C23.5749 51.8927 21.9255 51.6452 20.3157 51.2288C18.6627 50.8432 17.0528 50.2935 15.5104 49.5879C9.21551 46.6065 4.36198 41.2732 2.00797 34.7506C-0.346037 28.228 -0.00962061 21.0452 2.94388 14.768C5.89429 8.5806 11.1811 3.79886 17.6571 1.46037" fill="#6CBE99"/>
-                    </svg>
-                    <h3>Réservation en autonomie</h3>
+                <svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.2216 1.45026C23.7185 -0.802294 30.8483 -0.418906 37.0621 2.51713C40.5421 4.18763 43.611 6.59493 46.053 9.56962C48.4949 12.5443 50.2505 16.0141 51.1961 19.7348C52.1418 23.4556 52.2546 27.3369 51.5266 31.1055C50.7986 34.8742 49.2475 38.4387 46.9824 41.5482C45.9533 42.9122 44.7962 44.1762 43.5268 45.3233C42.2657 46.4476 40.9105 47.4634 39.476 48.3598C36.5208 50.0791 33.2688 51.2369 29.8864 51.7738C28.2029 51.9787 26.5051 52.0445 24.8106 51.9707C23.1467 51.8963 21.4953 51.6488 19.8835 51.2321C18.2284 50.8465 16.6165 50.2966 15.0722 49.5908C8.76941 46.6086 3.90982 41.2738 1.55288 34.7495C-0.804071 28.2251 -0.467234 21.0404 2.48995 14.7615C5.44405 8.57243 10.7375 3.78939 17.2216 1.45026" fill="#6CBE99"/>
+                </svg>
+
+                    <div class="text">
+                        <h3>Réservation en autonomie</h3>
+                    </div>
                     <akar-icon name="chevron-down" id="icon" stroke="3" color="#$black" size="20"> </akar-icon>
                 </span>
 
@@ -31,10 +34,13 @@
 
             <article class="accordion__item js-show-item-default" data-binding="expand-accordion-item">
                 <span class="accordion__title" aria-controls="panel-2" role="tab" aria-selected="false" aria-expanded="false" data-binding="expand-accordion-trigger">
-                    <svg width="58" height="51" viewBox="0 0 58 51" fill="none" xmlns="http://www.w3.org/2000/svg" loading="lazy">
-                        <path d="M57.2099 11.3564L41.991 0.0864258L25.925 23.8209L10.7129 12.5509L0 28.3668L30.4311 50.9138L57.2099 11.3564Z" fill="#EFD857"/>
-                    </svg>
-                    <h3>Offre clé en main</h3>
+                <svg width="52" height="47" viewBox="0 0 52 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M52 10.2437L38.167 0L23.5641 21.573L9.7373 11.3293L0 25.705L27.6598 46.1987L52 10.2437Z" fill="#EFD857"/>
+                </svg>
+
+                    <div class="text">
+                        <h3>Offre clé en main</h3>
+                    </div>
                     <akar-icon name="chevron-down" id="icon" stroke="3" color="#$black" size="20"> </akar-icon>
                 </span>
 
@@ -42,7 +48,7 @@
                     <div class="accordion__content-inner">
                         <p>Besoin d'aide ? Déléguez nous l'organisation de votre événement<p>
                         <ul>
-                        <li>Pré-sélection des prestataires</li>
+                            <li>Pré-sélection des prestataires</li>
                             <li>Propositions de devis-sur-mesure</li>
                             <li>Gestion des détails logistiques et coordination</li>
                             <li>Remise d'un brief complet pour vous aiguiller le jour J</li>

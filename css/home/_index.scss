@@ -4,6 +4,11 @@ html {
     position: relative;
 }
 
+.h2-text {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
 .container {
     margin-left: 25px;
     margin-right: 25px;
@@ -71,11 +76,12 @@ section.hero {
     }
 
     input 				{
-      padding:10pxpx;
+      padding:10px;
       display:block;
       width:100%;
       border:none;
     }
+
     input:focus 		{ outline:none; }
 
     select {
@@ -102,6 +108,14 @@ section.hero {
 
 section.fourCards {
 
+  .cards {
+    display: grid;
+  }
+
+  img {
+    display: none;
+  }
+
   .card {
     position: relative;
     display: flex;
@@ -109,7 +123,6 @@ section.fourCards {
     row-gap: 10px;
 
     border-radius: 10px;
-    width: 280px;
     height: 280px;
     padding: 20px;
 
@@ -127,13 +140,7 @@ section.fourCards {
 }
 
 section.parisNY {
-    .text {
-        text-align: center;
 
-        h2 {
-            margin-bottom: 35px;
-        }
-    }
     a {
         margin-top: 40px;
     }
@@ -142,22 +149,24 @@ section.parisNY {
 section.offres {
 
   .accordion { 
+    display: flex;
+    flex-direction: column;
   
     &__item {
       margin-bottom: 40px;
+      flex: 1;
     }
   
     &__title {
       padding: 0px 15px;
       display: flex;
-      justify-content: space-between;
+      column-gap: 20px;
       align-items: center;
       position: relative;
       font-weight: 400;
 
-      h3 {
-        margin-left: 20px;
-        display:inline-block;
+      .text {
+        text-align: left;
       }
   
       &:hover,
@@ -196,6 +205,8 @@ section.offres {
 }
 
 section.presse {
+
+
   .liens {
     margin-top: 35px;
     display: flex;

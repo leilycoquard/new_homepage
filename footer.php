@@ -9,12 +9,12 @@
         <div class="rs">
 
             <div class="logos">
-                <akar-icon name="facebook-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon>
-                <akar-icon name="linkedin-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon>
-                <akar-icon name="instagram-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon>
-                <akar-icon name="youtube-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon>
-                <akar-icon name="twitter-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon>
-                <akar-icon name="linkedin-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon>
+                <a href="https://www.facebook.com/tcheen.fr" target="_blank"><akar-icon name="facebook-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
+                <a href="https://www.linkedin.com/company/tcheen/" target="_blank"><akar-icon name="linkedin-box-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
+                <a href="https://www.instagram.com/tcheen_com" target="_blank"><akar-icon name="instagram-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
+                <a href="https://www.youtube.com/@tcheen1911" target="_blank"><akar-icon name="youtube-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
+                <a href="https://twitter.com/tcheen_com" target="_blank"><akar-icon name="twitter-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
+                <a href="https://www.pinterest.fr/tcheen_com/" target="_blank"><akar-icon name="pinterest-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
             </div>
 
             <p>Lundi au Vendredi 9h - 18h00</p>
@@ -37,7 +37,7 @@
             </div>
     
             <div class="propos">
-                <p>À propos</p>
+                <h5>À propos</h5>
                 <ul>
                     <li><a href="">Le concept</a></li>
                     <li><a href="">Nos engagements</a></li>
@@ -47,7 +47,7 @@
             </div>
     
             <div class="help">
-                <p>Aide</p>
+                <h5>Aide</h5>
                 <ul>
                     <li><a href="">FAQ client</a></li>
                     <li><a href="">FAQ prestataire</a></li>

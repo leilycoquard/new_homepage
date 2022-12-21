@@ -2,7 +2,9 @@
 
 <div class="container">
     
-    <h2>...et de la presse !</h2>
+    <div class="h2-text">        
+        <h2>...et de la presse !</h2>
+    </div>
     
     <div class="liens">
         <a href="https://www.sudouest.fr/gironde/bordeaux/bordeaux-a-l-essca-une-rentree-de-reflexion-autour-de-l-environnement-12223547.php" target="_blank"><img src="webp\presse\souest.webp" alt="Sud Ouest" width="auto" height="100%" loading="lazy"></a>

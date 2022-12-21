@@ -11,6 +11,10 @@
         margin-right: 200px;
     }
 
+    .h2-text {
+        width: 60%;
+      }
+
     section.hero {
 
         .text_intro{
@@ -28,6 +32,41 @@
             flex-flow: row nowrap !important;
             justify-content: space-between;
             height: 100px;
+
+            > div > * {
+                height: 100% !important;
+              }
+        }
+
+        img {
+            width: 100px !important;
+            height: 100px !important;
+        }
+
+    }
+
+    section.fourCards {
+
+        .cards {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        img {
+
+            display: block;
+            width: 100%;
+            height: 100%; 
+            object-fit: cover;
+            border-radius: 10px;
+            }
+
+    }
+
+    section.offres {
+        .accordion {
+            flex-direction: row;
+            column-gap: 40px;
         }
     }
 

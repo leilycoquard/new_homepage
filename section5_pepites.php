@@ -2,7 +2,7 @@
 
      <div class="container">
 
-          <div>
+          <div class="h2-text">
                <h2>En manque d’inspiration ?</h2>
                <p>Voici notre sélection du mois, rien que pour vous.</p>
           </div>
