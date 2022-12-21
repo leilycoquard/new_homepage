@@ -1,7 +1,7 @@
 <section class="soutien margin-top-section" aria-labelledby="Nos soutiens">
 
     <div class="container">
-        <div>
+        <div class="h2-text">
             <h2>Ils nous soutiennent</h2>
         </div>
     

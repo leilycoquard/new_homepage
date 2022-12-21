@@ -6,6 +6,7 @@ html {
 
 .h2-text {
   text-align: center;
+  margin: 0 auto;
   margin-bottom: 35px;
 }
 
@@ -123,7 +124,7 @@ section.fourCards {
     row-gap: 10px;
 
     border-radius: 10px;
-    height: 280px;
+    // height: 280px;
     padding: 20px;
 
     overflow: hidden;
@@ -131,12 +132,21 @@ section.fourCards {
     text-align: left;
     background-color: $white;
 
+    h4 {
+      width: 60%;
+    }
+
   }
 
   .card.active {
     background-color: $yellow;
     transition: 0.4s;
+    
+    > .svg__yellow {
+      background-image: url('../svg/white.svg');
+    }
   }
+
 }
 
 section.parisNY {
@@ -164,6 +174,7 @@ section.offres {
       align-items: center;
       position: relative;
       font-weight: 400;
+      justify-content: space-between;
 
       .text {
         text-align: left;
@@ -188,7 +199,7 @@ section.offres {
     }
   
       &__content-inner {
-          padding: 0 40px 10px 40px;
+          padding: 30px 40px 10px 40px;
       }
   
     &__content {

@@ -2,7 +2,7 @@
 
 <div class="container">
     
-    <div>
+    <div class="h2-text">
         <h2>Faites le premier pas</h2>
         <p>5 catégories pour concoter l’événement parfait</p>
     </div>
