@@ -186,8 +186,8 @@ footer .rs .logos {
 
 @media only screen and (min-width: 992px) {
   header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   header .header-container {
     margin-left: 96px;
