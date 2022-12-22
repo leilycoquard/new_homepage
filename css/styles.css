@@ -600,16 +600,16 @@ section.devenir .both {
     gap: 4%;
   }
   section.fourCards .card__1 {
-    height: 60%;
+    height: 54%;
   }
   section.fourCards .card__2 {
-    height: 36%;
+    height: 42%;
   }
   section.fourCards .card__3 {
-    height: 44%;
+    height: 36%;
   }
   section.fourCards .card__4 {
-    height: 52%;
+    height: 60%;
   }
   section.offres .accordion {
     width: 80%;

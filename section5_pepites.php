@@ -51,6 +51,7 @@
           $(".owl-carousel").owlCarousel( {
                autoplay: true,
                loop: true,
+               lazyLoad:true,
                autoplayTimeout: 2000,
                autoplayHoverPause:true,
                margin: 40,
