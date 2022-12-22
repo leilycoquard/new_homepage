@@ -28,7 +28,7 @@
 
         </div>
         
-        <div class="two_Cards">
+        <div class="two_cards">
 
             <div class="card card__3">
                 <span class="svg svg__yellow"></span>

@@ -18,7 +18,7 @@
 
                 <div id="panel-1" class="accordion__content" role="tabpanel" aria-hidden="true" aria-labelledby="tab1" data-binding="expand-accordion-container">
                     <div class="accordion__content-inner">
-                        <p>Simplifiez vous la vie, utilisez gratuitement Tcheen pour gérer votre événement<p>
+                        <p>Simplifiez vous la vie, utilisez gratuitement Tcheen pour gérer votre événement.<p>
                         <ul>
                             <li>Accès à l’ensemble du catalogue de prestataires</li>
                             <li>Pré-devis instantané</li>
@@ -46,7 +46,7 @@
 
                 <div id="panel-2" class="accordion__content" role="tabpanel" aria-hidden="true" aria-labelledby="tab1" data-binding="expand-accordion-container">
                     <div class="accordion__content-inner">
-                        <p>Besoin d'aide ? Déléguez nous l'organisation de votre événement<p>
+                        <p>Besoin d'aide ? Déléguez-nous l'organisation de votre événement.<p>
                         <ul>
                             <li>Pré-sélection des prestataires</li>
                             <li>Propositions de devis-sur-mesure</li>

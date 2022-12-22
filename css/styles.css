@@ -129,10 +129,6 @@
   color: black !important;
 }
 
-.margin-top-section {
-  margin-top: 100px;
-}
-
 header {
   position: sticky;
   top: 0;
@@ -339,7 +335,7 @@ html {
 .h2-text {
   text-align: center;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 60px;
 }
 
 .container {
@@ -350,6 +346,14 @@ html {
 .space-between {
   display: flex;
   justify-content: space-between;
+}
+
+.margin-top-section {
+  margin-top: 70px;
+}
+
+span.bold {
+  font-weight: 600;
 }
 
 section.hero {
@@ -453,8 +457,36 @@ section.fourCards .card.active > .svg__yellow {
   background-image: url("../svg/white.svg");
 }
 
+section.parisNY .h2-text p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
 section.parisNY a {
   margin-top: 40px;
+  position: relative;
+  width: fit-content;
+  color: #707070;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+section.parisNY a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #EFD857;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+section.parisNY a:hover {
+  color: #2E2D2C;
+}
+section.parisNY a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 section.offres .accordion {
@@ -489,16 +521,41 @@ section.offres .accordion__title:hover h5, section.offres .accordion__title:focu
   content: "\f056";
 }
 section.offres .accordion__content-inner {
-  padding: 30px 40px 10px 40px;
+  padding: 30px 0px;
 }
 section.offres .accordion__content {
   transition: height 0.3s ease-out;
   height: 0;
   overflow: hidden;
 }
+section.offres .accordion li {
+  list-style-position: inside !important;
+  margin-top: 10px;
+}
 section.offres .devis {
   margin-top: 50px;
   text-align: center;
+}
+
+section.pepitesFestives .pepite {
+  height: 520px;
+  cursor: pointer;
+}
+section.pepitesFestives .pepite .img {
+  width: 100%;
+}
+section.pepitesFestives .pepite .img__one {
+  height: 260px;
+}
+section.pepitesFestives img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+section.pepitesFestives .light {
+  margin-top: 25px;
+  font-weight: 400;
 }
 
 section.presse .liens {
@@ -524,6 +581,43 @@ section.devenir .both {
   row-gap: 40px;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .container {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+  section.fourCards .cards {
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+  }
+  section.fourCards .img {
+    display: none;
+  }
+  section.fourCards .two_cards {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 500px;
+    gap: 4%;
+  }
+  section.fourCards .card__1 {
+    height: 60%;
+  }
+  section.fourCards .card__2 {
+    height: 36%;
+  }
+  section.fourCards .card__3 {
+    height: 44%;
+  }
+  section.fourCards .card__4 {
+    height: 52%;
+  }
+  section.offres .accordion {
+    width: 80%;
+    flex-direction: row;
+    column-gap: 40px;
+    margin: 0 auto;
+  }
+}
 @media only screen and (min-width: 992px) {
   h1 {
     font-size: 2.5rem;
@@ -546,6 +640,9 @@ section.devenir .both {
   }
   .h2-text {
     width: 60%;
+  }
+  .margin-top-section {
+    margin-top: 100px;
   }
   section.hero {
     padding-top: 120px;
@@ -578,13 +675,13 @@ section.devenir .both {
   section.fourCards .two_cards {
     display: flex;
     flex-flow: column nowrap;
-    height: 500px;
+    height: 520px;
     gap: 4%;
   }
   section.fourCards img {
     display: block;
     width: 100%;
-    height: 500px;
+    height: 520px;
     object-fit: cover;
     border-radius: 10px;
   }
@@ -605,8 +702,10 @@ section.devenir .both {
     background-image: url("../svg/yellow.svg");
   }
   section.offres .accordion {
+    width: 80%;
     flex-direction: row;
     column-gap: 40px;
+    margin: 0 auto;
   }
   section.devenir .prestataire {
     background-color: #EFD857;
