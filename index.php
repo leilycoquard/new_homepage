@@ -38,7 +38,7 @@
             require_once 'section7_avis.php';
             require_once 'section8_presse.php';
             require_once 'section9_devenir.php';
-            require_once 'section10_soutien.php';
+            // require_once 'section10_soutien.php';
             require_once 'footer.php';
         ?>
 

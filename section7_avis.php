@@ -9,12 +9,21 @@
         <div>
     
             <div>
-                <div>
-                    <p>L'équipe de Tcheen est au top pour vous accompagner dans l'organisation de vos évènements : un grand merci à eux !</p>
+                <div class="avis">
+                    <span class="svg__pink"></span>
+                    <div class="text">
+                        <p>L'équipe de Tcheen est au top pour vous accompagner dans l'organisation de vos évènements : un grand merci à eux !</p>
+                        <p class="light">LPO - Séminaire de 60 personnes</p>
+                    </div>
                 </div>
     
-                <div>
-                    <p>Un grand merci pour votre organisation, les produits proposés (boissons et alimentation) ont été largement appréciés.</p>
+                <div class="avis">
+                    <span class="svg__pink"></span>
+                    <div class="text">
+                        <p>Un grand merci pour votre organisation, les produits proposés (boissons et alimentation) ont été largement appréciés.</p>
+                        <p class="light">Mairie du Bouscat - Conférence de 60 personnes</p>
+                        <a href="">Découvrir le cas pratique</a>
+                    </div>
                 </div>
     
                 <div>

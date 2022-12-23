@@ -8,10 +8,12 @@
             <button class="r-kit-btn-white">Rejoindre Tcheen</button>
         </div>
     
-        <div>
+        <div class="choix">
             <h3>Pourquoi choisir Tcheen ?</h3>
-            <p>Découvrez et réservez vos prestations écoresponsables sur une seule plateforme.</p>
-            <a href="">En savoir plus</a>
+            <div class="inside">
+                <p>Découvrez et réservez vos prestations écoresponsables sur une seule plateforme.</p>
+                <a href="">En savoir plus</a>
+            </div>
         </div>
 
     </div>

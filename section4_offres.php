@@ -20,10 +20,10 @@
                     <div class="accordion__content-inner">
                         <p>Simplifiez vous la vie, utilisez gratuitement Tcheen pour gérer votre événement.<p>
                         <ul>
-                            <li>Accès à l’ensemble du catalogue de prestataires</li>
-                            <li>Pré-devis instantané</li>
-                            <li>Gestion des demandes</li>
-                            <li>Espace de conversation avec le prestataire</li>
+                            <li>Accès à l’ensemble du <span class="bold"> catalogue de prestataires</span></li>
+                            <li>Pré-devis <span class="bold"> instantané</span></li>
+                            <li><span class="bold">Gestion des demandes</span></li>
+                            <li><span class="bold">Espace de conversation</span> avec le prestataire</li>
                             <li>Automatisation des relances</li>
                             <li>Gestion des paiements et de la facturation</li>
                         </ul>

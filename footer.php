@@ -30,7 +30,6 @@
                     <div class="email_input">
 
                         <input type="email" placeholder="Votre adresse mail" name="email">
-                        <akar-icon name="arrow-right" id="icon" stroke="1.5" color="$black" size="24"> </akar-icon>
                         
                     </div>
                 </div>
@@ -64,7 +63,7 @@
             <p>RGPD & gestion des cookies</p>
         </div>
     
-        <p>100% de l’énergie de nos serveurs est renouvelable.</p>
+        <p class="renouv">100% de l’énergie de nos serveurs est renouvelable.</p>
 
     </div>
     

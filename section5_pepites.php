@@ -68,6 +68,7 @@
                1000: {
                     items: 4,
                     autoplay: false,
+                    loop: false,
                }
                }
           });
