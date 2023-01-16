@@ -12,7 +12,7 @@
                     <div class="img__one">
                          <img src="a_supp/chateau.webp" alt="">
                     </div>
-                    <p class="light">Lieu - Saint Léon</p>
+                    <p class="light">Lieux - Saint Léon</p>
                     <h4>Un événement d’exception</h4>
                     <p>Un château historique pour un événement d'exception ✨✨</p>
                </div>
@@ -20,7 +20,7 @@
                     <div class="img__two">
                          <img src="a_supp/lille.webp" alt="">
                     </div>
-                    <p class="light">Lieu - Lille</p>
+                    <p class="light">Lieux - Lille</p>
                     <h4>Notre pépite Lilloise</h4>
                     <p>Un beau coworking à l'esprit coffee-shop pour vous réunir entre collaborateurs 🤯🤯</p>
                </div>

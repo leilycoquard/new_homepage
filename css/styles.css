@@ -160,7 +160,7 @@ header .account:hover {
   cursor: pointer;
 }
 header .burger-cont {
-  width: 22px;
+  width: max-content;
   height: 18px;
   display: flex;
   flex-direction: column;
@@ -510,12 +510,14 @@ section.hero .home_search_form {
   margin-top: 42px;
 }
 section.hero .home_search_form .form_content {
-  padding: 10px;
+  border: 5px solid white;
   background-color: white;
+  padding-left: 0px;
   border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
   row-gap: 5px;
+  justify-content: space-between;
 }
 section.hero .home_search_form .form_content > div > * {
   height: 50px;
@@ -525,6 +527,10 @@ section.hero .home_search_form .form_content > div > * {
 section.hero .home_search_form .form_content button {
   box-sizing: border-box;
   width: 100%;
+}
+section.hero .home_search_form .form_content img {
+  max-width: 100%;
+  max-height: 40px;
 }
 section.hero .home_search_form .form_content .line:after {
   content: "";
@@ -541,20 +547,32 @@ section.hero .home_search_form .form_content .line > div:last-child {
   width: 40%;
   margin: 0;
 }
+section.hero .with_logo {
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  column-gap: 10px;
+}
+section.hero .heroBtn {
+  border-radius: 0 0 20px 20px;
+  text-transform: uppercase;
+  background-color: #EFD857;
+  color: #2E2D2C;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 25px 35px;
+}
 section.hero input {
   padding: 10px;
   display: block;
   width: 100%;
   border: none;
 }
-section.hero input:focus {
-  outline: none;
-}
 section.hero select {
   cursor: pointer;
-  appearance: none;
-  outline: 0;
   border: 0;
+  background-color: white;
   box-shadow: none;
   width: 100%;
 }
@@ -569,7 +587,9 @@ section.hero .logos img {
 }
 
 section.fourCards .cards {
-  display: grid;
+  display: flex;
+  flex-flow: row nowrap;
+  overflow-x: scroll;
 }
 section.fourCards img {
   display: none;
@@ -585,16 +605,22 @@ section.fourCards .card {
   cursor: pointer;
   text-align: left;
   background-color: white;
+  height: 250px;
 }
 section.fourCards .card h4 {
   width: 60%;
 }
 section.fourCards .card.active {
   background-color: #EFD857;
-  transition: 0.4s;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 section.fourCards .card.active > .svg__yellow {
   background-image: url("../svg/white.svg");
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 section.fourCards .svg {
   display: inline-block;
@@ -664,7 +690,6 @@ section.offres .accordion__title .text {
 }
 section.offres .accordion__title:hover, section.offres .accordion__title:focus {
   cursor: pointer;
-  outline: none;
 }
 section.offres .accordion__title:hover h5, section.offres .accordion__title:focus h5 {
   border-bottom-color: #a8bdc4;
@@ -725,10 +750,16 @@ section.premierPas #inner > * {
 }
 section.premierPas #inner > *:hover, section.premierPas #inner > *:focus {
   background-color: #EFD857;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
   cursor: pointer;
 }
 section.premierPas #inner > *:hover > .svg__yellow, section.premierPas #inner > *:focus > .svg__yellow {
   background-image: url("../svg/white.svg");
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 section.premierPas .svg {
   display: inline-block;
@@ -806,6 +837,7 @@ section.devenir .prestataire button {
 section.devenir .both {
   display: flex;
   flex-flow: column wrap;
+  width: 50%;
   row-gap: 40px;
 }
 section.devenir .both > * {
@@ -847,8 +879,8 @@ section.devenir a:hover::after {
   transform-origin: left;
 }
 section.devenir .inside {
-  display: flex;
-  flex-flow: column;
+  width: 60%;
+  flex-grow: 1;
   justify-content: space-between;
 }
 
@@ -858,6 +890,7 @@ section.devenir .inside {
     margin-right: 120px;
   }
   section.fourCards .cards {
+    display: grid;
     grid-template-columns: 50% 50%;
     gap: 40px;
   }
@@ -927,19 +960,29 @@ section.devenir .inside {
     width: 50%;
   }
   section.hero .form_content {
-    display: grid;
     flex-flow: row nowrap !important;
-    justify-content: space-between;
+    padding-left: 30px;
+    column-gap: 10px;
     height: 100px;
   }
   section.hero .form_content > div > * {
     height: 100% !important;
   }
-  section.hero img {
+  section.hero .form_content .line {
+    width: 40%;
+  }
+  section.hero .form_content > div:nth-child(3), section.hero .form_content > div:nth-child(2) {
+    width: 30%;
+  }
+  section.hero .logos > img {
     width: 100px !important;
     height: 100px !important;
   }
+  section.hero .heroBtn {
+    border-radius: 0 20px 20px 0;
+  }
   section.fourCards .cards {
+    display: grid;
     grid-template-columns: 30% 40% 30%;
     gap: 40px;
   }

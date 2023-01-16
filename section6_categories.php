@@ -16,7 +16,7 @@
             <div>
                 <span class="svg svg__yellow"></span>
                 <h4>Traiteur</h4>
-                <p>Une petite faim ou une faim d’ogre ?</p>
+                <p>Un petit creux ou une faim d’ogre ?</p>
             </div>
             <div>
                 <span class="svg svg__yellow"></span>

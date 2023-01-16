@@ -6,6 +6,7 @@
 
     section.fourCards {
         .cards {
+            display: grid;
             grid-template-columns: 50% 50%;
             gap: 40px;
         }
@@ -83,19 +84,31 @@
         }
         
         .form_content {
-            display: grid;
             flex-flow: row nowrap !important;
-            justify-content: space-between;
+            padding-left: 30px;
+            column-gap: 10px;
             height: 100px;
 
             > div > * {
                 height: 100% !important;
-              }
+            }
+
+            .line {
+                width: 40%;
+            }
+
+            >div:nth-child(3), >div:nth-child(2) {
+                width: 30%;
+            }
         }
 
-        img {
+        .logos > img {
             width: 100px !important;
             height: 100px !important;
+        }
+
+        .heroBtn {
+            border-radius: 0 20px 20px 0;
         }
 
     }
@@ -103,6 +116,7 @@
     section.fourCards {
 
         .cards {
+            display: grid;
             grid-template-columns: 30% 40% 30%;
             gap: 40px;
         }

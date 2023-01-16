@@ -47,12 +47,14 @@ section.hero {
         margin-top: 42px;
 
         .form_content {
-            padding: 10px;
+            border: 5px solid $white;
             background-color: $white;
+            padding-left: 0px;
             border-radius: 20px;
             display: flex;
             flex-flow: column nowrap;
             row-gap: 5px ;
+            justify-content: space-between;
 
             > div > * {
               height: 50px;
@@ -63,6 +65,11 @@ section.hero {
             button {
                 box-sizing: border-box;
                 width: 100%;
+            }
+
+            img {
+              max-width:100%;
+              max-height:40px;
             }
 
             .line {
@@ -78,6 +85,7 @@ section.hero {
                 &:first-child {
                   width:60%;
                 }
+
                 &:last-child { 
                   width:40%;
                   margin:0;
@@ -88,20 +96,35 @@ section.hero {
 
     }
 
+    .with_logo {
+      display: flex;
+      align-items: center;
+      flex-flow: row nowrap;
+      column-gap: 10px;
+    }
+
+    .heroBtn {
+      border-radius: 0 0 20px 20px;
+      text-transform: uppercase;
+      background-color: $yellow;
+      color: $black;
+      border: 1px solid transparent;
+      font-size: $fs-base;
+      font-weight: $fw-h5;
+      padding: 25px 35px;
+    }
+
     input 				{
       padding:10px;
       display:block;
       width:100%;
       border:none;
     }
-
-    input:focus 		{ outline:none; }
-
+    
     select {
       cursor: pointer;
-      appearance: none;
-      outline: 0;
       border: 0;
+      background-color: $white;
       box-shadow: none;
       width: 100%;
     }
@@ -122,7 +145,9 @@ section.hero {
 section.fourCards {
 
   .cards {
-    display: grid;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow-x: scroll;
   }
 
   img {
@@ -144,6 +169,8 @@ section.fourCards {
     text-align: left;
     background-color: $white;
 
+    height: 250px;
+
     h4 {
       width: 60%;
     }
@@ -152,10 +179,15 @@ section.fourCards {
 
   .card.active {
     background-color: $yellow;
-    transition: 0.4s;
+    -webkit-transition: background-color 300ms linear;
+    -ms-transition: background-color 300ms linear;
+    transition: background-color 300ms linear;
     
     > .svg__yellow {
       background-image: url('../svg/white.svg');
+      -webkit-transition: background-color 300ms linear;
+      -ms-transition: background-color 300ms linear;
+      transition: background-color 300ms linear;
     }
   }
 
@@ -172,6 +204,7 @@ section.fourCards {
 
     &__yellow {
         background-image: url('../svg/yellow.svg');
+        
     }
 }
 
@@ -242,7 +275,6 @@ section.offres {
       &:hover,
       &:focus {
         cursor: pointer;
-        outline: none;
         h5 {
           border-bottom-color: #a8bdc4;
           display:inline-block;
@@ -326,10 +358,16 @@ section.premierPas {
 
       &:hover, &:focus {
         background-color: $yellow;
+        -webkit-transition: background-color 300ms linear;
+        -ms-transition: background-color 300ms linear;
+        transition: background-color 300ms linear;
         cursor: pointer;
 
         > .svg__yellow {
           background-image: url('../svg/white.svg');
+          -webkit-transition: background-color 300ms linear;
+          -ms-transition: background-color 300ms linear;
+          transition: background-color 300ms linear;
         }
       }
     }
@@ -430,6 +468,7 @@ section.devenir {
   .both {
     display: flex;
     flex-flow: column wrap;
+    width: 50%;
     row-gap: 40px;
 
     > * {
@@ -479,8 +518,8 @@ section.devenir {
   }
 
   .inside {
-    display: flex;
-    flex-flow: column;
+    width: 60%;
+    flex-grow: 1;
     justify-content: space-between;
   }
 }

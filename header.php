@@ -75,7 +75,7 @@
         
         <div class="right">
 
-            <div class="account clickableNav">
+            <div class="account clickableNav" tabIndex="0">
 
                 <p class="show">Mon compte</p>
                 <akar-icon name="person" class="hide" id="icon" stroke="1.5" color="#$black" size="30"> </akar-icon>
@@ -93,20 +93,21 @@
                     </a>
                 </div>
             </div>
-
-            </div>
-
+            
             <div class="show">
                 <button class="r-kit-btn">Déposer mon brief</button>
             </div>
 
         </div>
 
+
+        </div>
+
 </nav>
 </header>
 
-<script>// Nav menus apparaissent
-
+<script>
+    // Nav menus apparaissent
 const clickableNav = document.querySelectorAll(".clickableNav");
 const navMenu = document.querySelectorAll(".deroulant");
 
@@ -125,6 +126,7 @@ for (let x = 0; x < clickableNav.length; x++) {
 }
 
 // Nav menus disparaissent
+
 const body = document.body;
 
 body.addEventListener("click", (e) => {
@@ -148,12 +150,7 @@ body.addEventListener("click", (e) => {
       clickableNav[m].classList.remove("visible");
     }
   }
+  
+});
 
-  $(document).on("click", function(event){
-        var $trigger = $(".dropdown");
-        if($trigger !== event.target && !$trigger.has(event.target).length){
-            $(".dropdown-menu").slideUp("fast");
-        }
-    });
-    
-});</script>
+</script>

@@ -27,8 +27,8 @@
                 </div>
     
                 <div>
-                    <h4>Témoignage de Blandine Nguimbus, Docteur en Pharmacie pour le groupe Pierre Fabre</h4>
-                    <p>Organisation de 28 évènements au niveau national pour les Laboratoires Dermatologiques DUCRAY et A-derma</p>
+                    <h4>Témoignage de Blandine, Groupe Pierre Fabre</h4>
+                    <p>Organisation de 28 événements dans 28 villes de France pour 1500 invités.</p>
                 </div>
             </div>
     
