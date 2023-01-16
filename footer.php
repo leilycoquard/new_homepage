@@ -17,9 +17,11 @@
                 <a href="https://www.pinterest.fr/tcheen_com/" target="_blank"><akar-icon name="pinterest-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
             </div>
 
-            <p>Lundi au Vendredi 9h - 18h00</p>
-            <p>📞 +(33)7 56 99 30 34</p>
-            <a href="mailto:bonjour@tcheen.com">💌 bonjour@tcheen.com</a>
+            <div class="rsText">
+                <p>Lundi au Vendredi 9h - 18h00</p>
+                <p>📞 +(33)7 56 99 30 34</p>
+                <a href="mailto:bonjour@tcheen.com">💌 bonjour@tcheen.com</a>
+            </div>
         </div>
     
         <div class="three">   

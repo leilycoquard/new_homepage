@@ -4,8 +4,10 @@
 
         <div class="prestataire">
             <h3>Devenez prestataire</h3>
-            <p>Développez votre clientèle et améliorez votre impact environnemental.</p>
-            <button class="r-kit-btn-white">Rejoindre Tcheen</button>
+            <div class="inside">
+                <p>Développez votre clientèle et améliorez votre impact environnemental.</p>
+                <button class="r-kit-btn-white">Rejoindre Tcheen</button>
+            </div>
         </div>
     
         <div class="choix">

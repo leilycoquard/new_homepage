@@ -8,8 +8,8 @@
 
                 <span class="svg svg__yellow"></span>
 
-                <h4>Prestataires écofriendly et originaux</h4>
-                <p>Nous sélectionnons et accompagnons nos prestataires dans leur démarche écoresponsable.</p>
+                <h4>Éco-responsable et original</h4>
+                <p>La crème des prestataires sensibilisés à l’engagement durable.</p>
 
             </div>
 
@@ -17,7 +17,7 @@
                 <span class="svg svg__yellow"></span>
 
                 <h4>Devis instantané</h4>
-                <p>Les prix standards sont affichés, vous pouvez voir d’un seul coup d’oeil si c’est le match parfait.</p>
+                <p>Obtenez le match parfait et votre devis en 2 minutes chrono !</p>
             </div>
 
         </div>
@@ -33,14 +33,14 @@
             <div class="card card__3">
                 <span class="svg svg__yellow"></span>
 
-                <h4>Sans surcoût</h4>
-                <p>Sélectionnez les prestations et les options qui vous intéressent, le tout au même prix qu’en direct.</p>
+                <h4>100% Transparent</h4>
+                <p>Nos frais de service sont transparents et sans surcoût sur vos prestations.</p>
             </div>
 
             <div class="card card__4">
                 <span class="svg svg__yellow"></span>
-                <h4>Service sécurisé</h4>
-                <p>Vous profitez d’un cadre légal établi, d’une assistance en cas de pépin et nous vérifions la conformité de nos prestataires.</p>
+                <h4>Accompagnement personnalisé</h4>
+                <p>Nous vous accompagnons de A à Z avant et pendant votre événement.</p>
             </div>
 
         </div>

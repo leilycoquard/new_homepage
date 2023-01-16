@@ -9,24 +9,29 @@
 
         <div id="inner">
             <div>
+                <span class="svg svg__yellow"></span>
                 <h4>Lieux</h4>
                 <p>Pour se détendre, travailler ou célébrer une occasion.</p>
             </div>
             <div>
-                <h4>Nourriture</h4>
+                <span class="svg svg__yellow"></span>
+                <h4>Traiteur</h4>
                 <p>Une petite faim ou une faim d’ogre ?</p>
             </div>
             <div>
-                <h4>Boissons</h4>
+                <span class="svg svg__yellow"></span>
+                <h4>Activités</h4>
                 <p>Du photographe à l’animation, le choix est vaste.</p>
             </div>
             <div>
-                <h4>Activités</h4>
-                <p>Pour se désaltérer et tester de nouvelles saveurs</p>
-            </div>
-            <div>
+                <span class="svg svg__yellow"></span>
                 <h4>Mobilier & Déco</h4>
                 <p>Envie d’égayer votre événement ?</p>
+            </div>
+            <div>
+                <span class="svg svg__yellow"></span>
+                <h4>Boissons</h4>
+                <p>Pour se désaltérer et tester de nouvelles saveurs</p>
             </div>
         
         </div>
