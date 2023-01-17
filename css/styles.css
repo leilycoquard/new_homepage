@@ -179,7 +179,6 @@ header div.deroulant {
   visibility: hidden;
   position: absolute;
   padding: 7px 10px;
-  left: -15px;
   top: 50px;
   border-radius: 8px;
   box-shadow: 0px 29px 11px rgba(0, 0, 0, 0.03), 0px 16px 10px rgba(0, 0, 0, 0.09), 0px 7px 7px rgba(0, 0, 0, 0.15), 0px 2px 4px rgba(0, 0, 0, 0.18), 0px 0px 0px rgba(0, 0, 0, 0.18);
@@ -206,6 +205,7 @@ header .deroulant a:hover {
 header #deroulant-1 {
   width: 325px;
   height: 250px;
+  left: -15px;
 }
 header #deroulant-1 a:nth-child(1),
 header #deroulant-1 a:nth-child(4),
@@ -241,6 +241,7 @@ header #deroulant-2-2 a {
 }
 header #deroulant-3 {
   width: 202px;
+  right: -15px;
 }
 header #deroulant-3 a {
   width: 100%;
@@ -304,6 +305,17 @@ footer .newsletter {
   flex-direction: column;
   row-gap: 20px;
 }
+footer .newsletter__subscribe {
+  margin-top: 20px;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: white;
+  color: #2E2D2C;
+}
+footer .newsletter__subscribe:hover, footer .newsletter__subscribe:active {
+  cursor: pointer;
+  background-color: #EAEAE9;
+}
 footer .copyright {
   display: flex;
   flex-direction: column;
@@ -341,6 +353,13 @@ footer p.renouv, footer .copyright {
     margin-top: 50px;
     width: 100%;
     grid-template-columns: 40% 30% 30%;
+  }
+  footer .three :nth-child(2), footer .three :nth-child(3) {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .three :nth-child(2) ul, footer .three :nth-child(3) ul {
+    flex-grow: 1;
   }
   footer .copyright {
     flex-direction: row;
@@ -579,18 +598,12 @@ section.hero select {
 section.hero .logos {
   margin-top: 35px;
   display: flex;
-  justify-content: space-between;
 }
 section.hero .logos img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
-section.fourCards .cards {
-  display: flex;
-  flex-flow: row nowrap;
-  overflow-x: scroll;
-}
 section.fourCards img {
   display: none;
 }
@@ -747,6 +760,7 @@ section.premierPas #inner > * {
   height: 140px;
   padding: 15px;
   border-radius: 10px;
+  background-color: white;
 }
 section.premierPas #inner > *:hover, section.premierPas #inner > *:focus {
   background-color: #EFD857;
@@ -755,7 +769,7 @@ section.premierPas #inner > *:hover, section.premierPas #inner > *:focus {
   transition: background-color 300ms linear;
   cursor: pointer;
 }
-section.premierPas #inner > *:hover > .svg__yellow, section.premierPas #inner > *:focus > .svg__yellow {
+section.premierPas #inner > *:hover > a .svg__yellow, section.premierPas #inner > *:focus > a .svg__yellow {
   background-image: url("../svg/white.svg");
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;
@@ -837,11 +851,12 @@ section.devenir .prestataire button {
 section.devenir .both {
   display: flex;
   flex-flow: column wrap;
-  width: 50%;
   row-gap: 40px;
 }
 section.devenir .both > * {
-  height: 220px;
+  display: flex;
+  flex-flow: column nowrap;
+  height: 260px;
 }
 section.devenir .choix {
   background-color: white;
@@ -853,6 +868,7 @@ section.devenir h3 {
 }
 section.devenir a {
   margin-top: 40px;
+  padding: 5px 15px;
   position: relative;
   width: fit-content;
   color: #707070;
@@ -880,10 +896,96 @@ section.devenir a:hover::after {
 }
 section.devenir .inside {
   width: 60%;
+  display: flex;
   flex-grow: 1;
   justify-content: space-between;
+  flex-flow: column nowrap;
 }
 
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.brand-wheel {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+  --animationspeed: 45s;
+  --animationdelay: calc(var(--animationspeed) / 2);
+}
+
+.brand-wheel::before {
+  position: absolute;
+  background-image: linear-gradient(to right, #EFD857 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.brand-wheel::after {
+  position: absolute;
+  background-image: linear-gradient(to left, #EFD857 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+  right: 0;
+}
+
+.brand-slide {
+  flex-shrink: 0;
+  position: absolute;
+  animation-name: slidelogo;
+  animation-duration: var(--animationspeed);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.brand-slide.delay {
+  transform: translateX(100%);
+  animation-name: slidelogo2;
+}
+
+.brand-wheel:hover .brand-slide {
+  animation-play-state: paused;
+}
+
+.logo-div {
+  display: inline-flex;
+  align-self: center;
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  padding: 0 20px 0 20px;
+}
+
+@keyframes slidelogo {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slidelogo2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .container {
     margin-left: 120px;
@@ -961,7 +1063,6 @@ section.devenir .inside {
   }
   section.hero .form_content {
     flex-flow: row nowrap !important;
-    padding-left: 30px;
     column-gap: 10px;
     height: 100px;
   }
@@ -970,6 +1071,7 @@ section.devenir .inside {
   }
   section.hero .form_content .line {
     width: 40%;
+    padding-left: 30px;
   }
   section.hero .form_content > div:nth-child(3), section.hero .form_content > div:nth-child(2) {
     width: 30%;
@@ -983,8 +1085,8 @@ section.devenir .inside {
   }
   section.fourCards .cards {
     display: grid;
-    grid-template-columns: 30% 40% 30%;
-    gap: 40px;
+    grid-column-gap: 50px;
+    grid-template-columns: 3fr 4fr 3fr;
   }
   section.fourCards .two_cards {
     display: flex;

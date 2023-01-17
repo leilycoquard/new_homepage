@@ -8,30 +8,40 @@
         </div>
 
         <div id="inner">
-            <div>
-                <span class="svg svg__yellow"></span>
-                <h4>Lieux</h4>
-                <p>Pour se détendre, travailler ou célébrer une occasion.</p>
+            <div class="inner_card">
+                <a href="#">
+                    <span class="svg svg__yellow"></span>
+                    <h4>Lieux</h4>
+                    <p>Pour se détendre, travailler ou célébrer une occasion.</p>
+                </a>
             </div>
-            <div>
-                <span class="svg svg__yellow"></span>
-                <h4>Traiteur</h4>
-                <p>Un petit creux ou une faim d’ogre ?</p>
+            <div class="inner_card">
+                <a href="#">
+                    <span class="svg svg__yellow"></span>
+                    <h4>Traiteur</h4>
+                    <p>Un petit creux ou une faim d’ogre ?</p>
+                </a>
             </div>
-            <div>
-                <span class="svg svg__yellow"></span>
-                <h4>Activités</h4>
-                <p>Du photographe à l’animation, le choix est vaste.</p>
+            <div class="inner_card">
+                <a href="#"> 
+                    <span class="svg svg__yellow"></span>
+                    <h4>Activités</h4>
+                    <p>Du photographe à l’animation, le choix est vaste.</p>
+                </a>
             </div>
-            <div>
-                <span class="svg svg__yellow"></span>
-                <h4>Mobilier & Déco</h4>
-                <p>Envie d’égayer votre événement ?</p>
+            <div class="inner_card">
+                <a href="#">
+                    <span class="svg svg__yellow"></span>
+                    <h4>Mobilier & Déco</h4>
+                    <p>Envie d’égayer votre événement ?</p>
+                </a>
             </div>
-            <div>
-                <span class="svg svg__yellow"></span>
-                <h4>Boissons</h4>
-                <p>Pour se désaltérer et tester de nouvelles saveurs</p>
+            <div class="inner_card">
+                <a href="#">
+                    <span class="svg svg__yellow"></span>
+                    <h4>Boissons</h4>
+                    <p>Pour se désaltérer et tester de nouvelles saveurs</p>
+                </a>
             </div>
         
         </div>

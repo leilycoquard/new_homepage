@@ -85,7 +85,6 @@
         
         .form_content {
             flex-flow: row nowrap !important;
-            padding-left: 30px;
             column-gap: 10px;
             height: 100px;
 
@@ -95,7 +94,9 @@
 
             .line {
                 width: 40%;
+                padding-left: 30px;
             }
+            
 
             >div:nth-child(3), >div:nth-child(2) {
                 width: 30%;
@@ -117,8 +118,8 @@
 
         .cards {
             display: grid;
-            grid-template-columns: 30% 40% 30%;
-            gap: 40px;
+            grid-column-gap: 50px;
+            grid-template-columns: 3fr 4fr 3fr;
         }
 
         .two_cards {
@@ -163,5 +164,6 @@
           flex-flow: row nowrap;
           column-gap: 40px;
         }
+
       }
 }

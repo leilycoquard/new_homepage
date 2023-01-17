@@ -7,7 +7,7 @@
                 <div class="burger-cont clickableNav">
                     <akar-icon name="three-line-horizontal" id="icon" stroke="1.5" color="$black" size="50"> </akar-icon>
                     <div class="deroulant" id="deroulant-1">
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <p>Calculer mon éco-score</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
@@ -23,7 +23,7 @@
                         <a href="#">
                             <p>Blog</p>
                         </a>
-                        <a href="#">
+                        <a href="#" target="_blank">
                             <p>Presse</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"

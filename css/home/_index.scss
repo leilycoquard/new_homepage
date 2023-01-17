@@ -133,22 +133,15 @@ section.hero {
     .logos {
         margin-top: 35px;
         display: flex;
-        justify-content: space-between;
 
         img {
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
         }
     }
 }
 
 section.fourCards {
-
-  .cards {
-    display: flex;
-    flex-flow: row nowrap;
-    overflow-x: scroll;
-  }
 
   img {
     display: none;
@@ -355,6 +348,7 @@ section.premierPas {
       height: 140px;
       padding: 15px;
       border-radius: 10px;
+      background-color: $white;
 
       &:hover, &:focus {
         background-color: $yellow;
@@ -363,7 +357,7 @@ section.premierPas {
         transition: background-color 300ms linear;
         cursor: pointer;
 
-        > .svg__yellow {
+        > a .svg__yellow {
           background-image: url('../svg/white.svg');
           -webkit-transition: background-color 300ms linear;
           -ms-transition: background-color 300ms linear;
@@ -468,11 +462,12 @@ section.devenir {
   .both {
     display: flex;
     flex-flow: column wrap;
-    width: 50%;
     row-gap: 40px;
 
     > * {
-      height: 220px;
+      display: flex;
+      flex-flow: column nowrap;
+      height: 260px;
     }
   }
 
@@ -488,6 +483,7 @@ section.devenir {
 
   a {
     margin-top: 40px;
+    padding: 5px 15px;
     position: relative;
     width: fit-content;
     color: $grey;
@@ -519,7 +515,105 @@ section.devenir {
 
   .inside {
     width: 60%;
+    display: flex;
     flex-grow: 1;
     justify-content: space-between;
+    flex-flow: column nowrap;
+  }
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.brand-wheel {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+
+  --animationspeed: 45s;
+  --animationdelay: calc(var(--animationspeed) / 2);
+}
+
+.brand-wheel::before {
+  position: absolute;
+  background-image: linear-gradient(
+    to right,
+    $yellow 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  content: "";
+  height: 100%;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+}
+.brand-wheel::after {
+  position: absolute;
+  background-image: linear-gradient(
+    to left,
+    $yellow 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  content: "";
+  height: 100%;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+  right: 0;
+}
+
+.brand-slide {
+  flex-shrink: 0;
+  position: absolute;
+  animation-name: slidelogo;
+  animation-duration: var(--animationspeed);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.brand-slide.delay {
+  transform: translateX(100%);
+  animation-name: slidelogo2;
+}
+
+.brand-wheel:hover .brand-slide {
+  animation-play-state: paused;
+}
+
+.logo-div {
+  display: inline-flex;
+  align-self: center;
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  padding: 0 20px 0 20px;
+}
+
+@keyframes slidelogo {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slidelogo2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }

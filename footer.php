@@ -13,7 +13,7 @@
                 <a href="https://www.linkedin.com/company/tcheen/" target="_blank"><akar-icon name="linkedin-box-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
                 <a href="https://www.instagram.com/tcheen_com" target="_blank"><akar-icon name="instagram-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
                 <a href="https://www.youtube.com/@tcheen1911" target="_blank"><akar-icon name="youtube-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
-                <a href="https://twitter.com/tcheen_com" target="_blank"><akar-icon name="twitter-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
+                <!-- <a href="https://twitter.com/tcheen_com" target="_blank"><akar-icon name="twitter-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a> -->
                 <a href="https://www.pinterest.fr/tcheen_com/" target="_blank"><akar-icon name="pinterest-fill" id="icon" stroke="2" color="#$black" size="25"> </akar-icon></a>
             </div>
 
@@ -32,7 +32,8 @@
                     <div class="email_input">
 
                         <input type="email" placeholder="Votre adresse mail" name="email">
-                        
+                        <input type="submit" value="Je m'inscris" class="newsletter__subscribe">
+
                     </div>
                 </div>
             </div>

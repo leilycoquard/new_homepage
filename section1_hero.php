@@ -55,19 +55,83 @@
 
         </div>
 
-        <div class="logos">
+        <div class="owl_carousel logos" id="owl_imgs">
             <img src="webp\clients\pfabre.webp" alt="Pierre Fabre">
             <img src="webp\clients\lpo.webp" alt="LPO Ligue pour la Protection des Oiseaux">
             <img src="webp\clients\crouge.webp" alt="Croix-Rouge française">
             <img src="webp\clients\lposte.webp" alt="La Poste Groupe">
             <img src="webp\clients\airbus.webp" alt="Airbus">
             <img src="webp\clients\grdf.webp" alt="GRDF Gaz Réseau Distribution France">
+            <img src="webp\clients\hasso.webp" alt="Hello Asso">
+            <img src="webp\clients\edf.webp" alt="Électricité de France">
+            <img src="webp\clients\bouscat.webp" alt="Mairie du Bouscat">
+            <img src="webp\clients\cdiscount.webp" alt="Cdiscount">
+            <img src="webp\clients\inria.webp" alt="Inria">
+            <img src="webp\clients\fba.webp" alt="Femmes Business Angels">
+            <img src="webp\clients\flowrette.webp" alt="Flowrette">
+            <img src="webp\clients\lamotte.webp" alt="Lamotte">
+            <img src="webp\clients\circouleur.webp" alt="Circouleur">
         </div>
+
+  <div class="brand-wheel logos">
+    <div class="brand-slide">
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/0000FF">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/FF0000">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/024ah">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/735CDD">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/C8E087">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/2274A5">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/E6AF2E">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/B33951">
+      </div>
+    </div>
+    <div class="brand-slide delay">
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/0000FF">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/FF0000">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/024ah">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/735CDD">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/C8E087">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/2274A5">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/E6AF2E">
+      </div>
+      <div class="logo-div">
+        <img alt="#" src="https://via.placeholder.com/100/B33951">
+      </div>
+    </div>
+  </div>
 
     </div>
 
 </section>
-
+    
 <script>
 
 </script>
