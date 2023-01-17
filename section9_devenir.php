@@ -11,12 +11,10 @@
         </div>
     
         <div class="choix">
-            <div class="choix__right">
-                <h3>Pourquoi choisir Tcheen ?</h3>
-                <div class="inside">
-                    <p>Découvrez et réservez vos prestations écoresponsables sur une seule plateforme.</p>
-                    <a href="">Nos engagements</a>
-                </div>
+            <h3>Pourquoi choisir Tcheen ?</h3>
+            <div class="inside">
+                <p>Découvrez et réservez vos prestations écoresponsables sur une seule plateforme.</p>
+                <a href="">Nos engagements</a>
             </div>
         </div>
 

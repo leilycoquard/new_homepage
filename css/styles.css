@@ -729,9 +729,12 @@ section.offres .devis {
 }
 
 section.pepitesFestives .pepite {
-  background-color: white;
   border-radius: 20px;
   cursor: pointer;
+  background-color: white;
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
 }
 section.pepitesFestives .pepite p, section.pepitesFestives .pepite h4 {
   padding-left: 20px;
@@ -775,7 +778,6 @@ section.premierPas #inner > * {
   height: 140px;
   padding: 15px;
   border-radius: 10px;
-  background-color: white;
 }
 section.premierPas #inner > *:hover, section.premierPas #inner > *:focus {
   background-color: #EFD857;
@@ -789,6 +791,26 @@ section.premierPas #inner > *:hover > a .svg__yellow, section.premierPas #inner 
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
+}
+section.premierPas .inner_card {
+  -webkit-transition: background-color 300ms linear;
+  -ms-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+section.premierPas .inner_card__1 {
+  background-color: #9ADFBF;
+}
+section.premierPas .inner_card__2 {
+  background-color: #96DEE1;
+}
+section.premierPas .inner_card__3 {
+  background-color: #F7ECAB;
+}
+section.premierPas .inner_card__4 {
+  background-color: #eebcd8;
+}
+section.premierPas .inner_card__5 {
+  background-color: #A4A3D6;
 }
 section.premierPas .svg {
   display: inline-block;

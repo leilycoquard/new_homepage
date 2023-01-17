@@ -48,17 +48,17 @@
             </div>
     
             <div class="show">
-                <p>Prestataires</p>
+                <p style="text-transform:uppercase">Nos prestataires</p>
                 <akar-icon name="chevron-down" id="icon" stroke="3" color="#$black" size="20"> </akar-icon>
             
             </div>
     
             <div class="show">
-                <p>Engagements</p>
+                <p style="text-transform:uppercase">Nos engagements</p>
             </div>
 
             <div class="show">
-                <p>Nos offres</p>
+                <p style="text-transform:uppercase">Nos offres</p>
             </div>
             
         </div>
@@ -77,7 +77,7 @@
 
             <div class="account clickableNav" tabIndex="0">
 
-                <p class="show">Mon compte</p>
+                <p class="show" style="text-transform:uppercase">Mon compte</p>
                 <akar-icon name="person" class="hide" id="icon" stroke="1.5" color="#$black" size="30"> </akar-icon>
                 <akar-icon name="chevron-down" id="icon" stroke="3" color="#$black" size="20"> </akar-icon>
                 <div class="deroulant" id="deroulant-3">

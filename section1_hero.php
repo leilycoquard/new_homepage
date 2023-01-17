@@ -55,7 +55,7 @@
 
         </div>
 
-        <div class="owl_carousel logos" id="owl_imgs">
+        <div class="owl_carousel owl_logos logos" id="owl_imgs">
             <img src="webp\clients\pfabre.webp" alt="Pierre Fabre">
             <img src="webp\clients\lpo.webp" alt="LPO Ligue pour la Protection des Oiseaux">
             <img src="webp\clients\crouge.webp" alt="Croix-Rouge française">
@@ -133,5 +133,4 @@
 </section>
     
 <script>
-
 </script>

@@ -61,9 +61,9 @@
         </div>
     
         <div class="copyright">
-            <p>Mentions légales</p>
+            <a href="#"><p>Mentions légales</p></a>
+            <a href="#"><p>RGPD & gestion des cookies</p></a>
             <p>©TCHEEN - 2020 - Tous droits réservés</p>
-            <p>RGPD & gestion des cookies</p>
         </div>
     
         <p class="renouv">100% de l’énergie de nos serveurs est renouvelable.</p>
