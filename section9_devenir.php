@@ -8,6 +8,7 @@
                 <p>Développez votre clientèle et améliorez votre impact environnemental.</p>
                 <button class="r-kit-btn-white">Rejoindre Tcheen</button>
             </div>
+            <img src="svg\danse.svg" class="danse" alt="Danceurs Tcheen">
         </div>
     
         <div class="choix">

@@ -6,7 +6,7 @@
             <h2>La vérité sort de la bouche des clients...</h2>
         </div>
         
-        <div>
+        <div class="avis_side">
     
             <div>
                 <div class="avis">
@@ -18,22 +18,24 @@
                 </div>
     
                 <div class="avis">
-                    <span class="svg__pink"></span>
-                    <div class="text">
-                        <p>Un grand merci pour votre organisation, les produits proposés (boissons et alimentation) ont été largement appréciés.</p>
-                        <p class="light">Mairie du Bouscat - Conférence de 60 personnes</p>
-                        <a href="">Découvrir le cas pratique</a>
+                    <div class="avis_right">
+                        <div class="text text__2">
+                            <p>Un grand merci pour votre organisation, les produits proposés (boissons et alimentation) ont été largement appréciés.</p>
+                            <p class="light">Mairie du Bouscat - Conférence de 60 personnes</p>
+                            <a href="#" target="_blank">Découvrir le cas pratique</a>
+                        </div>
+                        <span class="svg__pink"></span>
                     </div>
                 </div>
     
-                <div>
+                <div class="description_vidéo">
                     <h4>Témoignage de Blandine, Groupe Pierre Fabre</h4>
                     <p>Organisation de 28 événements dans 28 villes de France pour 1500 invités.</p>
                 </div>
             </div>
     
             <div>
-                
+                <img src="a_supp\video-placeholder.webp" alt="Vidéo témoignage pour Pierre Fabre">
             </div>
     
         </div>

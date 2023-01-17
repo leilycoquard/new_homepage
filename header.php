@@ -3,7 +3,7 @@
 
         <div class="left">
             
-            <div>
+            <div tabindex="0">
                 <div class="burger-cont clickableNav">
                     <akar-icon name="three-line-horizontal" id="icon" stroke="1.5" color="$black" size="50"> </akar-icon>
                     <div class="deroulant" id="deroulant-1">
@@ -47,17 +47,17 @@
                 <img src="webp\tcheen.webp" alt="Tcheen" width="auto" height="50px" loading="lazy">
             </div>
     
-            <div class="show">
+            <div class="show" tabindex="0">
                 <p style="text-transform:uppercase">Nos prestataires</p>
                 <akar-icon name="chevron-down" id="icon" stroke="3" color="#$black" size="20"> </akar-icon>
             
             </div>
     
-            <div class="show">
+            <div class="show" tabindex="0">
                 <p style="text-transform:uppercase">Nos engagements</p>
             </div>
 
-            <div class="show">
+            <div class="show" tabindex="0">
                 <p style="text-transform:uppercase">Nos offres</p>
             </div>
             

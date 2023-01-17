@@ -40,7 +40,7 @@
                 <a href="#">
                     <span class="svg svg__yellow"></span>
                     <h4>Boissons</h4>
-                    <p>Pour se désaltérer et tester de nouvelles saveurs</p>
+                    <p>Pour se désaltérer et tester de nouvelles saveurs.</p>
                 </a>
             </div>
         

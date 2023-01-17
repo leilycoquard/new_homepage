@@ -49,11 +49,12 @@ section.hero {
         .form_content {
             border: 5px solid $white;
             background-color: $white;
+            padding-top: 20px;
             padding-left: 0px;
             border-radius: 20px;
             display: flex;
             flex-flow: column nowrap;
-            row-gap: 5px ;
+            row-gap: 10px ;
             justify-content: space-between;
 
             > div > * {
@@ -101,6 +102,9 @@ section.hero {
       align-items: center;
       flex-flow: row nowrap;
       column-gap: 10px;
+
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     .heroBtn {
@@ -127,12 +131,14 @@ section.hero {
       background-color: $white;
       box-shadow: none;
       width: 100%;
+      text-align-last: center;
     }
 
 
     .logos {
         margin-top: 35px;
         display: flex;
+        flex-flow: row wrap;
 
         img {
             width: 100px;
@@ -262,7 +268,8 @@ section.offres {
       justify-content: space-between;
 
       .text {
-        text-align: left;
+        text-align: center;
+        width: 100%;
       }
   
       &:hover,
@@ -423,22 +430,50 @@ section.premierPas {
 }
 
 section.avisClient {
-  .avis {
+
+  .avis_side {
     display: flex;
     flex-flow: column nowrap;
+  }
+
+  .avis_right {
+    display: flex;
+  }
+
+  .avis {
+    display: flex;
+    flex-flow: row nowrap;
     margin-bottom: 40px;
+    width: 100%;
     
     .svg__pink {
-      background-image: url('../svg/pink.svg');
+      width: 40px;
+      height: 170px;
+      background-color: $pink;
+      transform: rotate(15deg);
+      margin-right: 50px;
+      z-index: -1;
     }
 
     .text {
       width: 60%;
+      display: flex;
+      flex-flow: column nowrap;
+      row-gap: 5px;
+
+      &__2 {
+        width: 100%;
+      }
     }
   }
 
+  .description_vidéo {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 15px;
+  }
+
   a {
-    margin-top: 40px;
     position: relative;
     width: fit-content;
     color: $grey;
@@ -476,12 +511,11 @@ section.presse {
     margin-top: 35px;
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
-    column-gap: 35px;
+    justify-content: space-around;
 
     img {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
   }
 }
@@ -492,6 +526,7 @@ section.devenir {
     background-color: $yellow;
     border-radius: 10px;
     padding: 20px;
+    position: relative;
 
     button {
       cursor: pointer;

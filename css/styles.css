@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* VARS */
 /*30px*/
 /*40px*/
@@ -531,11 +532,12 @@ section.hero .home_search_form {
 section.hero .home_search_form .form_content {
   border: 5px solid white;
   background-color: white;
+  padding-top: 20px;
   padding-left: 0px;
   border-radius: 20px;
   display: flex;
   flex-flow: column nowrap;
-  row-gap: 5px;
+  row-gap: 10px;
   justify-content: space-between;
 }
 section.hero .home_search_form .form_content > div > * {
@@ -571,6 +573,8 @@ section.hero .with_logo {
   align-items: center;
   flex-flow: row nowrap;
   column-gap: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 section.hero .heroBtn {
   border-radius: 0 0 20px 20px;
@@ -594,10 +598,12 @@ section.hero select {
   background-color: white;
   box-shadow: none;
   width: 100%;
+  text-align-last: center;
 }
 section.hero .logos {
   margin-top: 35px;
   display: flex;
+  flex-flow: row wrap;
 }
 section.hero .logos img {
   width: 100px;
@@ -699,7 +705,8 @@ section.offres .accordion__title {
   justify-content: space-between;
 }
 section.offres .accordion__title .text {
-  text-align: left;
+  text-align: center;
+  width: 100%;
 }
 section.offres .accordion__title:hover, section.offres .accordion__title:focus {
   cursor: pointer;
@@ -826,19 +833,42 @@ section.premierPas .svg__yellow {
   background-image: url("../svg/yellow.svg");
 }
 
-section.avisClient .avis {
+section.avisClient .avis_side {
   display: flex;
   flex-flow: column nowrap;
+}
+section.avisClient .avis_right {
+  display: flex;
+}
+section.avisClient .avis {
+  display: flex;
+  flex-flow: row nowrap;
   margin-bottom: 40px;
+  width: 100%;
 }
 section.avisClient .avis .svg__pink {
-  background-image: url("../svg/pink.svg");
+  width: 40px;
+  height: 170px;
+  background-color: #eebcd8;
+  transform: rotate(15deg);
+  margin-right: 50px;
+  z-index: -1;
 }
 section.avisClient .avis .text {
   width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+}
+section.avisClient .avis .text__2 {
+  width: 100%;
+}
+section.avisClient .description_vidéo {
+  display: flex;
+  flex-flow: column nowrap;
+  row-gap: 15px;
 }
 section.avisClient a {
-  margin-top: 40px;
   position: relative;
   width: fit-content;
   color: #707070;
@@ -869,18 +899,18 @@ section.presse .liens {
   margin-top: 35px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  column-gap: 35px;
+  justify-content: space-around;
 }
 section.presse .liens img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 section.devenir .prestataire {
   background-color: #EFD857;
   border-radius: 10px;
   padding: 20px;
+  position: relative;
 }
 section.devenir .prestataire button {
   cursor: pointer;
@@ -1147,10 +1177,25 @@ section.devenir .inside {
     column-gap: 40px;
     margin: 0 auto;
   }
+  section.avisClient .avis_side {
+    display: flex;
+    flex-flow: row nowrap;
+    column-gap: 100px;
+  }
+  section.avisClient .description_vidéo {
+    text-align: right;
+  }
   section.devenir .prestataire {
     background-color: #EFD857;
     border-radius: 10px;
     padding: 20px;
+  }
+  section.devenir .prestataire .danse {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    height: auto;
   }
   section.devenir .both {
     flex-flow: row nowrap;
