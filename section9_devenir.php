@@ -8,15 +8,17 @@
                 <p>Développez votre clientèle et améliorez votre impact environnemental.</p>
                 <button class="r-kit-btn-white">Rejoindre Tcheen</button>
             </div>
-            <img src="svg\danse.svg" class="danse" alt="Danceurs Tcheen">
         </div>
     
         <div class="choix">
-            <h3>Pourquoi choisir Tcheen ?</h3>
             <div class="inside">
-                <p>Découvrez et réservez vos prestations écoresponsables sur une seule plateforme.</p>
+                <div>
+                    <h3>Pourquoi choisir Tcheen ?</h3>
+                    <p>Découvrez et réservez vos prestations écoresponsables sur une seule plateforme.</p>
+                </div>
                 <a href="">Nos engagements</a>
             </div>
+            <img src="svg\danse.svg" class="danse" alt="Danceurs Tcheen">
         </div>
 
     </div>

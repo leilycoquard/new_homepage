@@ -12,7 +12,7 @@
                 <div class="avis">
                     <span class="svg__pink"></span>
                     <div class="text">
-                        <p>L'équipe de Tcheen est au top pour vous accompagner dans l'organisation de vos évènements : un grand merci à eux !</p>
+                        <p>L'équipe de Tcheen est au top pour vous accompagner dans l'organisation de vos évènements: un grand merci à eux !</p>
                         <p class="light">LPO - Séminaire de 60 personnes</p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
                 </div>
     
                 <div class="description_vidéo">
-                    <h4>Témoignage de Blandine, Groupe Pierre Fabre</h4>
+                    <h4>Découvrez le témoignage de Blandine, Groupe Pierre Fabre</h4>
                     <p>Organisation de 28 événements dans 28 villes de France pour 1500 invités.</p>
                 </div>
             </div>
