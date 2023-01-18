@@ -28,7 +28,7 @@
                     <div class="img__three">
                          <img src="a_supp/salle.webp" alt="">
                     </div>
-                    <p class="light">Haux</p>
+                    <p class="light">Lieux - Haux</p>
                     <h4>Salle de réception 🎉</h4>
                     <p>Profitez du Château Peneau et de ses espaces merveilleux pour vous retrouver entre amis, collègues ou proches. ✨</p>
                </div>

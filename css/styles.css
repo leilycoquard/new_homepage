@@ -752,15 +752,15 @@ section.pepitesFestives .pepite :nth-child(4) {
   padding-bottom: 20px;
 }
 section.pepitesFestives .pepite:hover, section.pepitesFestives .pepite:active, section.pepitesFestives .pepite:focus {
-  background-color: #EFD857;
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
+  background-color: #9ADFBF;
 }
-section.pepitesFestives .pepite .img {
+section.pepitesFestives .img {
   width: 100%;
 }
-section.pepitesFestives .pepite .img__one {
+section.pepitesFestives .img__one {
   height: 260px;
 }
 section.pepitesFestives img {
@@ -937,6 +937,9 @@ section.devenir .choix .inside {
   margin-left: auto;
 }
 section.devenir .choix .danse {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: none;
 }
 section.devenir .choix a {
@@ -1220,7 +1223,7 @@ section.devenir .inside {
   section.devenir .choix .danse {
     display: block;
     width: 280px;
-    transform: translate(70%, 20%) !important;
+    transform: translate(-50%, 20%) !important;
   }
   section.devenir .inside {
     width: 60%;

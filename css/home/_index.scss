@@ -330,14 +330,15 @@ section.pepitesFestives {
     :nth-child(4) {
       padding-bottom: 20px;
     }
-    
-    &:hover, &:active, &:focus {
-        background-color: $yellow;
-        -webkit-transition: background-color 300ms linear;
-        -ms-transition: background-color 300ms linear;
-        transition: background-color 300ms linear;
-    }
 
+    &:hover, &:active, &:focus {
+      -webkit-transition: background-color 300ms linear;
+      -ms-transition: background-color 300ms linear;
+      transition: background-color 300ms linear;
+      background-color: $lightGreen;
+    }
+  } 
+    
     .img {
       width: 100%;
 
@@ -346,19 +347,17 @@ section.pepitesFestives {
       }
     }
 
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  
+    .light {
+      margin-top: 25px;
+    }
     
-  }
-
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-  }
-
-  .light {
-    margin-top: 25px;
-  }
 }
 
 section.premierPas {
@@ -558,6 +557,9 @@ section.devenir {
     }
 
     .danse {
+      position: absolute;
+      left: 0;
+      top:0;
       display: none;
     }
 
