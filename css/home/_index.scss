@@ -112,7 +112,11 @@ section.hero {
       background-color: $white;
       box-shadow: none;
       width: 100%;
-      text-align-last: center;
+      text-align: center;
+
+      option {
+        font-size: $fs-base;
+      }
     }
 
 

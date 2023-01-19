@@ -115,13 +115,14 @@ header {
         width: 325px;
         height: fit-content;
         left: -15px;
+        overflow: hidden;
 
         div {
             display: block;
             width: 100%;
             height: 1px;
-            background: $black;
-            transform: scaleX(107%);
+            background: $grey;
+            transform: scaleX(111%);
             margin: 5px 0;
           }
 
@@ -161,7 +162,8 @@ header {
 
       #deroulant-3 {
         width: 202px;
-        
+        height: fit-content;
+        overflow: hidden;
         right: -15px;
     
         a {
@@ -170,7 +172,7 @@ header {
         div {
             width: 100%;
             height: 1px;
-            background: $black;
+            background: $grey;
             transform: scaleX(111%);
             margin: 5px 0;
           }

@@ -84,6 +84,10 @@
     section.hero {  
         padding-top: 120px;
 
+        select {
+            text-align: left;
+        }
+
         .text_intro{
             h1 {
                 width: 60%;
@@ -101,6 +105,10 @@
             flex-flow: row nowrap !important;
             column-gap: 10px;
             height: 100px;
+
+            input#city {
+                width: 150px;
+            }
 
             > div > * {
                 height: 100% !important;

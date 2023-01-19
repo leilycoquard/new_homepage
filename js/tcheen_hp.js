@@ -31,11 +31,7 @@ $(document).ready(function(){
 
     (() => { //SECTION 4 : 2 offres qui se déroulent
         
-    var accordion = $('body').find('[data-behavior="accordion"]');
     var expandedClass = 'is-expanded';
-
-    $.each(accordion, function () { // loop through all accordions on the page
-
     var accordionItems = $(this).find('[data-binding="expand-accordion-item"]');
 
     $.each(accordionItems, function () { // loop through all accordion items of each accordion
@@ -87,8 +83,6 @@ $(document).ready(function(){
             }
         });
     });
-
-});
 
     })();
 
