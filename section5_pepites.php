@@ -47,37 +47,6 @@
 </section>
 
 <script>
-     $(document).ready(function(){
-          $(".carousel_pepites").owlCarousel( {
-               autoplay: true,
-               loop: true,
-               lazyLoad:true,
-               autoplayTimeout: 2000,
-               autoplayHoverPause:true,
-               margin: 40,
-               responsive: {
-               0: {
-                    items: 1
-               },
-               600: {
-                    items: 2
-               },
-               800: {
-                    items: 3
-               },
-               1000: {
-                    items: 4,
-                    autoplay: false,
-                    loop: false,
-               }
-               }
-          });
-     });
 
-     $('.play').on('click',function(){
-    owl.trigger('play.owl.autoplay',[3000])
-     })
-     $('.stop').on('click',function(){
-     owl.trigger('stop.owl.autoplay')
-     })
+     
 </script>

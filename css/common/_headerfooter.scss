@@ -6,6 +6,28 @@ header {
     z-index:10;
     box-shadow : 0px 3px 6px #00000029;
 
+    a {
+        position: relative;
+        width: fit-content;
+    
+        &::after {
+          position: absolute;
+          content: "";
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 3px;
+          background: $yellow;
+          transform: scaleX(0);
+          transition: transform 0.5s;
+        }
+    
+        &:hover::after {
+          transform: scaleX(1);
+          transform-origin: left;
+        }
+      }
+
     .left, .right {
         display: flex;
         flex-flow: row nowrap;
@@ -28,6 +50,15 @@ header {
     .account {
         display: flex;
         position: relative;
+        align-items: center;
+
+        &:hover {cursor: pointer;}
+    }
+
+    .prestas {
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
         align-items: center;
 
         &:hover {cursor: pointer;}
@@ -77,30 +108,31 @@ header {
         align-items: center;
         padding: 5px;
         border-radius: 5px;
-
-        &:hover {
-            background: $yellow;
-          }
+        justify-content: space-between;
       }
     
       #deroulant-1 {
         width: 325px;
-        height: 250px;
+        height: fit-content;
         left: -15px;
-      }
-    
-      #deroulant-1 a:nth-child(1),
-      #deroulant-1 a:nth-child(4),
-      #deroulant-2 > a {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+
+        div {
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: $black;
+            transform: scaleX(107%);
+            margin: 5px 0;
+          }
+
+        &:nth-child(-n+5) {
+            display: block;
+        }
       }
 
       #deroulant-2 {
         width: 184px;
-        height: 212px;
+        height: fit-content;
       }
 
       #deroulant-2-2 {
@@ -224,8 +256,8 @@ footer {
         gap: 0px 65px;
     }
 
-    p.renouv, .copyright {
-        margin-top: 30px;
+    .copyright {
+        margin-top: 80px;
     }
 }
 
@@ -256,6 +288,15 @@ footer {
             flex-direction: row;
             column-gap: 10px;
             align-items: center;
+        }
+
+        #deroulant-1 {
+            div {
+                display: none;
+            }
+            a:nth-child(-n+5) {
+                display: none;
+            }
         }
     }
 

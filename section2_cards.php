@@ -50,39 +50,4 @@
             
     </div>
 
-
-    <script>
-    
-        $(document).ready(function(){
-    
-            function handleMouseover(e) {
-
-                document.querySelector(".active").classList.remove("active");
-                var img = document.getElementById("img__switch");
-                e.target.closest(".card").classList.add("active");
-    
-                if (e.target.classList.contains("card__1")) {
-                    img.src="webp/cards/s&g.webp";
-                    img.alt = "Solange & Ginette";
-    
-                } else if (e.target.classList.contains("card__2")) {
-                    img.src="webp/cards/samos.webp";
-                    img.alt = "Samos Greek Food";
-    
-                } else if (e.target.classList.contains("card__3")){
-                    img.src="webp/cards/donvent.webp";
-                    img.alt = "Le Don du Vent";
-
-                } else if (e.target.classList.contains("card__4")) {
-                    img.src="webp/cards/fredeville.webp";
-                    img.alt = "Frédeville Organisation";
-                }
-    
-            }
-    
-            document.querySelectorAll(".card").forEach(card => card.addEventListener("mouseover", handleMouseover) );
-            document.querySelectorAll(".card").forEach(card => card.addEventListener("click", handleMouseover) );
-        });
-    
-    </script>
 </section>

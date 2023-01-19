@@ -137,6 +137,25 @@ header {
   z-index: 10;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
 }
+header a {
+  position: relative;
+  width: fit-content;
+}
+header a::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #EFD857;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+header a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
 header .left, header .right {
   display: flex;
   flex-flow: row nowrap;
@@ -158,6 +177,15 @@ header .account {
   align-items: center;
 }
 header .account:hover {
+  cursor: pointer;
+}
+header .prestas {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  align-items: center;
+}
+header .prestas:hover {
   cursor: pointer;
 }
 header .burger-cont {
@@ -199,26 +227,27 @@ header .deroulant a {
   align-items: center;
   padding: 5px;
   border-radius: 5px;
-}
-header .deroulant a:hover {
-  background: #EFD857;
+  justify-content: space-between;
 }
 header #deroulant-1 {
   width: 325px;
-  height: 250px;
+  height: fit-content;
   left: -15px;
 }
-header #deroulant-1 a:nth-child(1),
-header #deroulant-1 a:nth-child(4),
-header #deroulant-2 > a {
+header #deroulant-1 div {
+  display: block;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  height: 1px;
+  background: #2E2D2C;
+  transform: scaleX(107%);
+  margin: 5px 0;
+}
+header #deroulant-1:nth-child(-n+5) {
+  display: block;
 }
 header #deroulant-2 {
   width: 184px;
-  height: 212px;
+  height: fit-content;
 }
 header #deroulant-2-2 {
   top: 200%;
@@ -322,8 +351,8 @@ footer .copyright {
   flex-direction: column;
   gap: 0px 65px;
 }
-footer p.renouv, footer .copyright {
-  margin-top: 30px;
+footer .copyright {
+  margin-top: 80px;
 }
 
 @media only screen and (min-width: 992px) {
@@ -349,6 +378,12 @@ footer p.renouv, footer .copyright {
     flex-direction: row;
     column-gap: 10px;
     align-items: center;
+  }
+  header #deroulant-1 div {
+    display: none;
+  }
+  header #deroulant-1 a:nth-child(-n+5) {
+    display: none;
   }
   footer .three {
     margin-top: 50px;
@@ -520,6 +555,7 @@ section.hero {
   background-color: #EFD857;
   background-image: url("../svg/bg.svg");
   background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 70px;
   padding-bottom: 35px;
 }
@@ -554,26 +590,10 @@ section.hero .home_search_form .form_content img {
   max-width: 100%;
   max-height: 40px;
 }
-section.hero .home_search_form .form_content .line:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-section.hero .home_search_form .form_content .line > div {
-  float: left;
-}
-section.hero .home_search_form .form_content .line > div:first-child {
-  width: 50%;
-}
-section.hero .home_search_form .form_content .line > div:last-child {
-  width: 50%;
-  margin: 0;
-}
 section.hero .with_logo {
   display: flex;
   align-items: center;
   flex-flow: row nowrap;
-  column-gap: 10px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -588,7 +608,7 @@ section.hero .heroBtn {
   padding: 25px 35px;
 }
 section.hero input {
-  padding: 10px;
+  padding-left: 10px;
   display: block;
   width: 100%;
   border: none;
@@ -611,7 +631,7 @@ section.hero .logos img {
   height: 100px;
 }
 
-section.fourCards img {
+section.fourCards .img {
   display: none;
 }
 section.fourCards .card {
@@ -625,7 +645,7 @@ section.fourCards .card {
   cursor: pointer;
   text-align: left;
   background-color: white;
-  height: 250px;
+  height: fit-content;
 }
 section.fourCards .card h4 {
   width: 60%;
@@ -688,26 +708,35 @@ section.parisNY a:hover::after {
   transform-origin: left;
 }
 
-section.offres .accordion {
-  display: flex;
-  flex-direction: column;
-}
 section.offres .accordion__item {
   margin-bottom: 40px;
-  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 20px;
+}
+section.offres .accordion__item:first-child {
+  background-color: #9ADFBF;
+}
+section.offres .accordion__item:last-child {
+  background-color: #EFD857;
 }
 section.offres .accordion__title {
-  padding: 0px 15px;
+  padding: 25px 15px;
   display: flex;
   column-gap: 20px;
   align-items: center;
   position: relative;
   font-weight: 400;
   justify-content: space-between;
+  flex-grow: 1;
 }
 section.offres .accordion__title .text {
   text-align: center;
   width: 100%;
+  flex-grow: 1;
+}
+section.offres .accordion__title h3 {
+  margin-bottom: 15px;
 }
 section.offres .accordion__title:hover, section.offres .accordion__title:focus {
   cursor: pointer;
@@ -720,7 +749,7 @@ section.offres .accordion__title:hover h5, section.offres .accordion__title:focu
   content: "\f056";
 }
 section.offres .accordion__content-inner {
-  padding: 30px 0px;
+  padding: 30px 15px;
 }
 section.offres .accordion__content {
   transition: height 0.3s ease-out;
@@ -728,7 +757,6 @@ section.offres .accordion__content {
   overflow: hidden;
 }
 section.offres .accordion li {
-  list-style-position: inside !important;
   margin-top: 10px;
 }
 section.offres .devis {
@@ -841,6 +869,15 @@ section.avisClient .avis_side {
 section.avisClient .avis_right {
   display: flex;
 }
+section.avisClient .video {
+  display: flex;
+  justify-content: center;
+}
+section.avisClient .widget {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
 section.avisClient .avis {
   display: flex;
   flex-flow: row nowrap;
@@ -864,11 +901,12 @@ section.avisClient .avis .text {
 }
 section.avisClient .avis .text__2 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 section.avisClient .description_vidéo {
-  display: flex;
-  flex-flow: column nowrap;
-  row-gap: 15px;
+  display: none;
 }
 section.avisClient a {
   position: relative;
@@ -982,6 +1020,17 @@ section.devenir .inside {
   flex-grow: 1;
   justify-content: space-between;
   flex-flow: column nowrap;
+}
+
+section.soutien .logos_support {
+  margin-top: 35px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+section.soutien .logos_support img {
+  width: 100px;
+  height: 100px;
 }
 
 @keyframes fade-in {
@@ -1153,19 +1202,13 @@ section.devenir .inside {
   }
   section.hero .form_content {
     padding-top: 0 !important;
+    padding-left: 30px !important;
     flex-flow: row nowrap !important;
     column-gap: 10px;
     height: 100px;
   }
   section.hero .form_content > div > * {
     height: 100% !important;
-  }
-  section.hero .form_content .line {
-    width: 40%;
-    padding-left: 30px;
-  }
-  section.hero .form_content > div:nth-child(3), section.hero .form_content > div:nth-child(2) {
-    width: 30%;
   }
   section.hero .logos > img {
     width: 100px !important;
@@ -1185,8 +1228,10 @@ section.devenir .inside {
     height: 520px;
     gap: 4%;
   }
-  section.fourCards img {
+  section.fourCards .img {
     display: block;
+  }
+  section.fourCards img {
     width: 100%;
     height: 520px;
     object-fit: cover;
@@ -1196,10 +1241,14 @@ section.devenir .inside {
     height: 48%;
   }
   section.offres .accordion {
+    display: flex;
     width: 80%;
     flex-direction: row;
     column-gap: 40px;
     margin: 0 auto;
+  }
+  section.offres .accordion > * {
+    width: 50%;
   }
   section.avisClient .avis_side {
     display: flex;
@@ -1208,6 +1257,9 @@ section.devenir .inside {
     justify-content: center;
   }
   section.avisClient .description_vidéo {
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 15px;
     text-align: right;
   }
   section.devenir .prestataire {

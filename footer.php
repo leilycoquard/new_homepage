@@ -62,6 +62,7 @@
     
         <div class="copyright">
             <a href="#"><p>Mentions légales</p></a>
+            <a href="#"><p>Plan du site</p></a>
             <a href="#"><p>RGPD & gestion des cookies</p></a>
             <p>©TCHEEN - 2020 - Tous droits réservés</p>
         </div>

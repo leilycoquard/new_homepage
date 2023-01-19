@@ -24,6 +24,9 @@
         <script src="https://unpkg.com/akar-icons-web-components" type="module"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 
+        <script src="js\tcheen_hp.js" defer></script>
+        <script src="js\tcheen_headerfooter.js" defer></script>
+
     </head>
     <body>
         

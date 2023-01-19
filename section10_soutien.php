@@ -6,7 +6,7 @@
             <h2>Ils nous soutiennent</h2>
         </div>
     
-        <div>
+        <div class="logos_support">
             <a href="https://technowest.com/" target="_blank"><img src="webp\support\technow.webp" alt="Bordeaux Technowest" width="auto" height="100%" loading="lazy"></a>
             <a href="https://www.nouvelle-aquitaine.fr/" target="_blank"><img src="webp\support\naq.webp" alt="Région Nouvelle Aquitaine" width="auto" height="100%" loading="lazy"></a>
             <a href="https://www.frenchtechbordeaux.com/" target="_blank"><img src="webp\support\ftech.webp" alt="French Tech Bordeaux" width="auto" height="100%" loading="lazy"></a>

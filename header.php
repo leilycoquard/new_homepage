@@ -7,8 +7,26 @@
                 <div class="burger-cont clickableNav">
                     <akar-icon name="three-line-horizontal" id="icon" stroke="1.5" color="$black" size="50"> </akar-icon>
                     <div class="deroulant" id="deroulant-1">
+                        <a href="#">
+                            <p>Lieux</p>
+                        </a>
+                        <a href="#">
+                            <p>Nourriture</p>
+                        </a>
+                        <a href="#">
+                            <p>Activités</p>
+                        </a>
+                        <a href="#">
+                            <p>Mobilier & Déco</p>
+                        </a>
+                        <a href="#">
+                            <p>Boissons</p>
+                        </a>
+
+                        <div></div>
+                        
                         <a href="#" target="_blank">
-                            <p>Calculer mon éco-score</p>
+                            <p>Calculer mon éco-score &nbsp;</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                                 class="ai ai-LinkOut">
@@ -23,8 +41,8 @@
                         <a href="#">
                             <p>Blog</p>
                         </a>
-                        <a href="#" target="_blank">
-                            <p>Presse</p>
+                        <!-- <a href="#" target="_blank">
+                            <p>Presse &nbsp;</p>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                                 class="ai ai-LinkOut">
@@ -32,7 +50,7 @@
                                 <path d="M16 3h5v5" />
                                 <path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5" />
                             </svg>
-                        </a>
+                        </a> -->
                         <a href="#">
                             <p>Contact</p>
                         </a>
@@ -47,10 +65,21 @@
                 <img src="webp\tcheen.webp" alt="Tcheen" width="auto" height="50px" loading="lazy">
             </div>
     
-            <div class="show" tabindex="0">
+            <div class="prestas show clickableNav" tabIndex="0">
+
                 <p style="text-transform:uppercase">Nos prestataires</p>
                 <akar-icon name="chevron-down" id="icon" stroke="3" color="#$black" size="20"> </akar-icon>
-            
+                <div class="deroulant" id="deroulant-2">
+                    <a href="#">
+                        <p>Lieux</p>
+                    </a>
+                    <a href="#">
+                        <p>Nourriture</p>
+                    </a>
+                    <a href="#">
+                        <p>Activités</p>
+                    </a>
+                </div>
             </div>
     
             <div class="show" tabindex="0">
@@ -105,52 +134,3 @@
 
 </nav>
 </header>
-
-<script>
-    // Nav menus apparaissent
-const clickableNav = document.querySelectorAll(".clickableNav");
-const navMenu = document.querySelectorAll(".deroulant");
-
-for (let x = 0; x < clickableNav.length; x++) {
-  clickableNav[x].addEventListener("click", () => {
-    for (let y = 0; y < clickableNav.length; y++) {
-      navMenu[y].classList.remove("visible");
-    }
-    if (x == 2) {
-      navMenu[x].classList.add("visible");
-      navMenu[x - 1].classList.add("visible");
-    } else {
-      navMenu[x].classList.add("visible");
-    }
-  });
-}
-
-// Nav menus disparaissent
-
-const body = document.body;
-
-body.addEventListener("click", (e) => {
-  var target = e.path;
-  let isOpen = false;
-  //check le path du click
-  for (let p = 0; p < target.length; p++) {
-    // check si on clique sur clickableNav
-    for (let n = 0; n < clickableNav.length; n++) {
-      // check si on clique sur navMenu
-      for (let m = 0; m < navMenu.length; m++) {
-        if (target[p] == clickableNav[n] || target[p] == navMenu[m]) {
-          isOpen = true;
-        }
-      }
-    }
-  }
-  for (let m = 0; m < navMenu.length; m++) {
-    if (!isOpen) {
-      navMenu[m].classList.remove("visible");
-      clickableNav[m].classList.remove("visible");
-    }
-  }
-  
-});
-
-</script>
