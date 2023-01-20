@@ -139,7 +139,6 @@ header {
 }
 header a {
   position: relative;
-  width: fit-content;
 }
 header a::after {
   position: absolute;
@@ -253,6 +252,7 @@ header #deroulant-2 {
 header #deroulant-2-2 {
   top: 200%;
   left: 160%;
+  display: flex;
   flex-direction: row;
   align-items: flex-start;
   cursor: default;
@@ -875,9 +875,20 @@ section.avisClient .avis_side {
 section.avisClient .avis_right {
   display: flex;
 }
-section.avisClient .video {
+section.avisClient #video {
   display: flex;
   justify-content: center;
+  position: relative;
+  width: 540px;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+section.avisClient #video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 section.avisClient .widget {
   width: 100%;

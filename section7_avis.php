@@ -40,7 +40,39 @@
             </div>
     
             <div class="video">
-                <img src="a_supp\video-placeholder.webp" alt="Vidéo témoignage pour Pierre Fabre">
+            <iframe 
+                    style="width: 100%; height: 100%;"
+                    loading="lazy";
+                    srcdoc="<style>
+                    img, svg {
+                        position: absolute;
+                        height: 100%;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                    
+                    svg {
+                        filter: drop-shadow(1px 1px 10px hsl(206.5, 70.7%, 8%));
+                        transition: all 250ms ease-in-out;
+                    }
+                    
+                    body:hover svg {
+                        filter: drop-shadow(1px 1px 10px hsl(206.5, 0%, 10%));
+                        transform: scale(1.2);
+                    }
+                    </style>
+                    <a href='https://www.youtube.com/embed/GfWvfp0qFDA?autoplay=1'>
+                    <img src='https://img.youtube.com/vi/GfWvfp0qFDA/hqdefault.jpg' alt='Compléter mon compte prestataire Tcheen'>
+                    <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 24 24' fill='none' stroke='#ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-play-circle'><circle cx='12' cy='12' r='10'></circle><polygon points='10 8 16 12 10 16 10 8'></polygon></svg>
+                    </a>
+                    "
+                    src="https://www.youtube.com/embed/GfWvfp0qFDA" 
+                    title="Compléter mon compte prestataire Tcheen"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
     
         </div>
