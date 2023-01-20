@@ -431,28 +431,13 @@ section.avisClient {
   .avis_side {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
   }
 
   .avis_right {
     display: flex;
   }
-
-  #video {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    width: 540px;
-    padding-bottom: 56.25%; /* 16:9 */
-    height: 0;
-  }
-
-  #video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
+  
 
   .widget {
     width: 100%;
@@ -487,12 +472,30 @@ section.avisClient {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+        
+        > * {
+          
+        }
       }
     }
   }
 
   .description_vidéo {
-    display: none;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 15px;
+    text-align: right;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .video {
+    --border-radius: 20px;
+    position: relative;
+  }
+
+  iframe {
+    clip-path: inset(0% 0% 0% 0% round 20px);
   }
 
   a {

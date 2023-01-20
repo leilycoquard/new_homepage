@@ -56,6 +56,12 @@
             width: 200px;
             height: auto;
           }
+        
+        .both {
+            flex-flow: row nowrap;
+            column-gap: 40px;
+            justify-content: center;
+        }
     }
     
 }
@@ -179,13 +185,7 @@
             flex-flow: row nowrap;
             column-gap: 100px;
             justify-content: center;
-        }
-
-        .description_vidéo {
-            display: flex;
-            flex-flow: column nowrap;
-            row-gap: 15px;
-            text-align: right;
+            align-items: normal;
         }
     }
 
