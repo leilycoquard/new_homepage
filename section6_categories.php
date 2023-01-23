@@ -50,7 +50,3 @@
 
     
 </section>
-
-<script>
-
-</script>

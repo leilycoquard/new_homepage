@@ -24,7 +24,3 @@
     </div>
    
 </section>
-
-<script>
-
-</script>

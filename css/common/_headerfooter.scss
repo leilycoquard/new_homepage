@@ -136,23 +136,20 @@ header {
         height: fit-content;
       }
 
-      #deroulant-2-2 {
-        top: 200%;
-        left: 160%;
+      .deroulant-2-2 {
+        position: absolute;
+        right: -300px;
+        top:0 !important;
         display: flex;
         flex-direction: row;
         align-items: flex-start;
         cursor: default;
 
-        div {
+        ul {
             width: max-content;
             display: flex;
             flex-direction: column;
             gap: 5px;
-
-            &:nth-child(1) {
-                height: 100%;
-            }
         }
 
         a {
@@ -221,7 +218,7 @@ footer {
 
     .three {
         display: grid;
-        gap: 20px 40px;
+        gap: 4% 40px;
 
         h5 { 
             margin-bottom: 5px;  
@@ -256,7 +253,7 @@ footer {
     .copyright {
         display: flex;
         flex-direction: column;
-        gap: 0px 65px;
+        gap: 10px 65px;
     }
 
     .copyright {
@@ -306,8 +303,9 @@ footer {
     footer {
         .three {
             margin-top: 50px;
+            gap: 2% 40px;
             width: 100%;
-            grid-template-columns: 40% 30% 30%;
+            grid-template-columns: 40% 26% 26%;
 
             :nth-child(2), :nth-child(3) {
                 display: flex;

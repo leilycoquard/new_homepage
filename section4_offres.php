@@ -21,12 +21,10 @@
                     <div class="accordion__content-inner">
                         
                         <ul>
-                            <li>Accès à l’ensemble du <span class="bold"> catalogue de prestataires</span></li>
-                            <li>Pré-devis <span class="bold"> instantané</span></li>
-                            <li>Gestion des demandes</li>
-                            <li><span class="bold">Espace de conversation</span> avec le prestataire</li>
-                            <li>Automatisation des relances</li>
-                            <li>Gestion des <span class="bold">paiements</span> et de la <span class="bold">facturation</span></li>
+                            <li>Accès gratuit au <span class="bold">catalogue de prestataires</span></li>
+                            <li>Gérez votre événement <span class="bold">sans frais</span></li>
+                            <li>Sécurité et contrat</li>
+                            <li>Révision des devis et ajustement des factures</li>
                         </ul>
                     </div>
                 </div>
@@ -41,7 +39,7 @@
 
                     <div class="text">
                         <h3>Offre clé en main</h3>
-                        <p>Besoin d'aide ? Déléguez-nous l'organisation de votre événement.<p>
+                        <p>Besoin d'aide ? <span class="bold">Déléguez-nous</span> l'organisation de votre événement.<p>
                     </div>
                     <akar-icon name="chevron-down" id="icon2" stroke="3" color="#$black" size="20"> </akar-icon>
                 </span>
@@ -49,12 +47,10 @@
                 <div id="panel-2" class="accordion__content" role="tabpanel" aria-hidden="true" aria-labelledby="tab1" data-binding="expand-accordion-container">
                     <div class="accordion__content-inner">
                         <ul>
-                            <li><span class="bold">Pré-sélection</span> des prestataires</li>
-                            <li>Propositions de devis-sur-mesure</li>
-                            <li>Gestion des détails logistiques et coordination</li>
-                            <li>Remise d'un <span class="bold">brief complet</span> pour vous aiguiller le jour J</li>
-                            <li>Facturation et paiements : <span class="bold">1 seul interlocuteur</span></li>
-                            <li>Respect des enjeux RSE : du zéro déchet aux produits locaux, tout est passé au peigne fin !</li>
+                            <li><span class="bold">Conception du projet</span></li>
+                            <li>Gestion des détails <span class="bold">logistiques</span> et coordination</li>
+                            <li>Facturation : 1 seul interlocuteur</li>
+                            <li>Enjeux <span class="bold">RSE</span></li>
                         </ul>
                     </div>
                 </div>

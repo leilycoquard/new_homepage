@@ -102,9 +102,34 @@ section.hero {
     input 				{
       padding-left:10px;
       display:block;
-      width:100%;
+      width:fit-content;
       border:none;
+
+      margin-left:auto;
+      margin-right:auto;
     }
+
+    ::placeholder {
+      text-align: center; 
+   }
+   
+   /* or, for legacy browsers */
+   
+   ::-webkit-input-placeholder {
+      text-align: center;
+   }
+   
+   :-moz-placeholder { /* Firefox 18- */
+      text-align: center;  
+   }
+   
+   ::-moz-placeholder {  /* Firefox 19+ */
+      text-align: center;  
+   }
+   
+   :-ms-input-placeholder {  
+      text-align: center; 
+   }
     
     select {
       cursor: pointer;
@@ -153,6 +178,8 @@ section.fourCards {
     background-color: $white;
 
     height: fit-content;
+
+    margin-bottom: 10px;
 
     h4 {
       width: 60%;
@@ -332,7 +359,7 @@ section.pepitesFestives {
       -webkit-transition: background-color 300ms linear;
       -ms-transition: background-color 300ms linear;
       transition: background-color 300ms linear;
-      background-color: $lightGreen;
+      background-color: $yellow;
     }
   } 
     
@@ -436,6 +463,7 @@ section.avisClient {
 
   .avis_right {
     display: flex;
+    justify-content: end;
   }
   
 
@@ -468,14 +496,9 @@ section.avisClient {
       justify-content: center;
 
       &__2 {
-        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        
-        > * {
-          
-        }
       }
     }
   }

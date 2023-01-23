@@ -249,24 +249,22 @@ header #deroulant-2 {
   width: 184px;
   height: fit-content;
 }
-header #deroulant-2-2 {
-  top: 200%;
-  left: 160%;
+header .deroulant-2-2 {
+  position: absolute;
+  right: -300px;
+  top: 0 !important;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   cursor: default;
 }
-header #deroulant-2-2 div {
+header .deroulant-2-2 ul {
   width: max-content;
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-header #deroulant-2-2 div:nth-child(1) {
-  height: 100%;
-}
-header #deroulant-2-2 a {
+header .deroulant-2-2 a {
   height: initial;
   width: 100%;
 }
@@ -323,7 +321,7 @@ footer .rs .rsText {
 }
 footer .three {
   display: grid;
-  gap: 20px 40px;
+  gap: 4% 40px;
 }
 footer .three h5 {
   margin-bottom: 5px;
@@ -352,7 +350,7 @@ footer .newsletter__subscribe:hover, footer .newsletter__subscribe:active {
 footer .copyright {
   display: flex;
   flex-direction: column;
-  gap: 0px 65px;
+  gap: 10px 65px;
 }
 footer .copyright {
   margin-top: 80px;
@@ -390,8 +388,9 @@ footer .copyright {
   }
   footer .three {
     margin-top: 50px;
+    gap: 2% 40px;
     width: 100%;
-    grid-template-columns: 40% 30% 30%;
+    grid-template-columns: 40% 26% 26%;
   }
   footer .three :nth-child(2), footer .three :nth-child(3) {
     display: flex;
@@ -561,6 +560,7 @@ section.hero {
   background-repeat: no-repeat;
   padding-top: 70px;
   padding-bottom: 35px;
+  /* or, for legacy browsers */
 }
 section.hero .text_intro p {
   display: none;
@@ -613,8 +613,25 @@ section.hero .heroBtn {
 section.hero input {
   padding-left: 10px;
   display: block;
-  width: 100%;
+  width: fit-content;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+section.hero ::placeholder {
+  text-align: center;
+}
+section.hero ::-webkit-input-placeholder {
+  text-align: center;
+}
+section.hero :-moz-placeholder { /* Firefox 18- */
+  text-align: center;
+}
+section.hero ::-moz-placeholder { /* Firefox 19+ */
+  text-align: center;
+}
+section.hero :-ms-input-placeholder {
+  text-align: center;
 }
 section.hero select {
   cursor: pointer;
@@ -652,6 +669,7 @@ section.fourCards .card {
   text-align: left;
   background-color: white;
   height: fit-content;
+  margin-bottom: 10px;
 }
 section.fourCards .card h4 {
   width: 60%;
@@ -789,7 +807,7 @@ section.pepitesFestives .pepite:hover, section.pepitesFestives .pepite:active, s
   -webkit-transition: background-color 300ms linear;
   -ms-transition: background-color 300ms linear;
   transition: background-color 300ms linear;
-  background-color: #9ADFBF;
+  background-color: #EFD857;
 }
 section.pepitesFestives .img {
   width: 100%;
@@ -875,6 +893,7 @@ section.avisClient .avis_side {
 }
 section.avisClient .avis_right {
   display: flex;
+  justify-content: end;
 }
 section.avisClient .widget {
   width: 100%;
@@ -903,7 +922,6 @@ section.avisClient .avis .text {
   justify-content: center;
 }
 section.avisClient .avis .text__2 {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -1223,6 +1241,10 @@ section.soutien .logos_support img {
     display: inline-block;
     width: 50%;
   }
+  section.hero .with_logo {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
   section.hero .form_content {
     padding-top: 0 !important;
     padding-left: 30px !important;
@@ -1231,7 +1253,7 @@ section.soutien .logos_support img {
     height: 100px;
   }
   section.hero .form_content input#city {
-    width: 150px;
+    width: 100px;
   }
   section.hero .form_content > div > * {
     height: 100% !important;
@@ -1265,6 +1287,7 @@ section.soutien .logos_support img {
   }
   section.fourCards .card {
     height: 48%;
+    margin-bottom: 0px;
   }
   section.offres .accordion {
     display: flex;

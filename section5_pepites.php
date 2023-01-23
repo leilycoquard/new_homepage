@@ -7,7 +7,7 @@
                <p>Voici notre sélection du mois, rien que pour vous.</p>
           </div>
 
-          <div class="pepites owl-carousel carousel_pepites">
+          <div class="pepites owl-carousel carousel_pepites owl-theme">
                <div class="pepite pepite___one">
                     <div class="img__one">
                          <img src="a_supp/chateau.webp" alt="">
@@ -45,8 +45,3 @@
      </div>
 
 </section>
-
-<script>
-
-     
-</script>
